@@ -1,0 +1,85 @@
+---
+title: "Hydrolytic enzyme assay for soil and litter"
+format: html
+editor: visual
+author: Karolina Jörgensen
+date-modified: today
+bibliography: references.bib
+tbl-cap-location: top
+label: tbl
+number-sections: true
+---
+
+This protocol describes how to estimate potential activities of extracellular hydrolytic enzymes using a fluorescence based method outlined in @saiya-cork2002. In short, soil or litter suspensions are incubated in a solution containing a substrate that can be hydrolyzed by the enzyme you are targeting. At the end of the incubation period, the reaction is stopped by adding NaOH which raises the pH and the hydrolyzed substrate starts to fluoresce. You measure fluorescence on a fluorescence spectrometer, and use standard curves to convert fluorescence to concentrations of product formed.
+
+| Enzyme                       | Abbreviation | Function                                                                                                                                                            | Substrate                                       | Standard substrate |
+|--------------|--------------|----------------|--------------|--------------|
+| 𝛽-D-Cellobiohydrolase        | CBH          | Releases cellobiose from cellulose                                                                                                                                  | 4-MUB-𝛽-D-cellobioside                          | MUB                |
+| 𝛽-Glucosidase                | BG           | Releases glucose from cellulose and cellobiose                                                                                                                      | 4-MUB-𝛽-D-glucopyranoside                       | MUB                |
+| N-acetyl-𝛽-D-glucosaminidase | NAG          | Releases glucosamine from chitin and similar polymers. Indicator of organic N turnover (and microbial/fungal N recycling)                                           | 4-MUB-N-acetyl-𝛽-D-glucosaminide                | MUB                |
+| Chitobiohydrolase            | CiBH         | Cleaves disaccharides of glucosamine from the ends of chitin chains                                                                                                 | 4-MUB-𝛽-D-N-Diacetyl-Chitobioside               | MUB                |
+| Acid phosphatase             | aP           | Releases inorganic phosphatase from organic matter; phosphorus mineralization: organic phosphorus hydrolysis                                                        | 4-MUB-phosphate                                 | MUB                |
+| 𝛽-Xylosidase                 | BXD          | Degrades the xylose component of hemicellulose                                                                                                                      | 4-MUB-𝛽-D-xylopytanoside                        | MUB                |
+| Leucine aminopeptidase       | LAP          | Releases amino acids from protein; catalyzes the hydrolysis of leucine residues at the N-terminus of peptides and proteins; organic nitrogen polypeptide hydrolysis | L-leucine-7-amido-4-methylcoumarinhydrochloride | MUC                |
+|                              |              |                                                                                                                                                                     |                                                 |                    |
+
+: Hydrolytic enzymes that can be targeted using the method outlined in this protocol {#tbl-substrates}
+
+## Protocol overview
+
+### Before starting the assay
+
+You need to prepare buffer solutions, substrate solutions and stop solutions before starting the assay, see @sec-solution_prep for details and storage times. The preparation of all solutions is quite time consuming so allocate one day for it.
+
+You also need to prepare the soil suspensions in advance. Previous versions of this protocol has said that suspensions should be prepared on the day of the assay but the suspensions seem to be stable for at least a week, so they can be prepared in advance. It is always a good idea to compare activities from a freshly made suspension with a stored one to optimize storage for your particular soil type.
+
+### Doing the assay
+
+The assay is done in black 96-well flat-bottom microplates with four technical replicates of each soil suspension (24 samples/plate). Prepare three identical plates with soil suspensions; one for doing the incubation, one fluorescence control @sec-fluorescence_ctrl and one quenching control @sec-quenching_ctrl.
+
+1.  Pipette 200 µl of the soil suspension into each well (4 replicates/sample)
+2.  Pipette 50 µl of enzyme substrate into each well (use multi-channel pipette)
+3.  Incubate plate in darkness (cover with aluminium foil)
+4.  Stop the reaction by adding 10 µl of 0.5 M NaOH
+5.  Measure fluorescence using the following settings:
+    -   Excitation wawelength = 365 nm
+    -   Excitation slit = 2.5
+    -   Emission wavelength = 450 nm
+    -   Emission slit = 2.5
+    -   Emission filter = 390 nm cut off
+    -   Number of measurement cycles = 1
+    -   Read time for each well = 1 sec
+
+Alteration fluorescence control:
+
+-   Stop reaction immediately after step 2
+
+Alteration quenching control:
+
+-   Add MUB standard substrate, same concentration as one point from the standard curve (e.g. 9 µM) instead of the enzyme substrate in step 2. Then follow point 3-5.
+
+### Fluorescence control {#sec-fluorescence_ctrl}
+
+The fluorescence control is used to control for any background fluorescence in the soil suspension, by stopping the reaction immediately after adding the enzyme substrate you can measure fluorescence at T~0~. This value is then subtracted from the fluorescence in the incubated sample to calculate "net"-fluorescence:
+
+$$
+fluorescence_{net} = incubated - T_0
+$$
+
+### Quenching control {#sec-quenching_ctrl}
+
+Quenching is a form of inhibition of fluorescence (e.g. caused by complex formation with the soil in the suspension). You need to test the level of quenching to determine whether your measurements are "ok". You do this by incubating the soil suspensions with a standard solution of MUB or MUC (which are the fluorescent components in the enzyme substrates; see @tab-substrates. A 30-60 min incubation period is usually enough. Calculate the quenching ratio:
+
+$$
+quenching = incubated/MUB_{standard}
+$$
+
+If the value is \>1, you have no quenching and if it is \<1 there is some quenching. Usually, a value \<0.6 means that there is too much quenching and you may need to dilute the sample and re-run the incubation with a lower soil concentration.
+
+You could also correct for quenching:
+
+$$
+fluorescence_{corrected} = fluorescence_{net} \times (1-quenching)
+$$
+
+## Solution preparation {#sec-solution_prep}
