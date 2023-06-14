@@ -93,14 +93,13 @@ div.csl-indent {
 
 </header>
 
-<p>This protocol describes how to estimate potential activities of extracellular hydrolytic enzymes using a fluorescence based, end-point analysis, method outlined in <span class="citation" data-cites="saiya-cork2002">Saiya-Cork, Sinsabaugh, and Zak (<a href="#ref-saiya-cork2002" role="doc-biblioref">2002</a>)</span>. In short, soil or litter suspensions are incubated in a solution containing a substrate that can be hydrolyzed by the enzyme you are targeting. At the end of the incubation period, the reaction is stopped by adding NaOH which raises the pH and the hydrolyzed substrate starts to fluoresce. You measure fluorescence on a fluorescence spectrometer, and use standard curves <a href="#sec-standard_curve">Section&nbsp;2.3.2</a> to convert fluorescence to concentrations of product formed (as a proxy for enzyme activity).</p>
+<p>This protocol describes how to estimate potential activities of extracellular hydrolytic enzymes using a fluorescence based, end-point analysis, method outlined in <span class="citation" data-cites="saiya-cork2002">Saiya-Cork, Sinsabaugh, and Zak (<a href="#ref-saiya-cork2002" role="doc-biblioref">2002</a>)</span>. In short, soil or litter suspensions are incubated in a solution containing a substrate that can be hydrolyzed by the enzyme you are targeting, see <a href="#tbl-subs">Table&nbsp;1</a>. At the end of the incubation period, the reaction is stopped by adding NaOH which raises the pH and the hydrolyzed substrate starts to fluoresce. You measure fluorescence on a fluorescence spectrometer, and use standard curves <a href="#sec-standard_curve">Section&nbsp;2.3.2</a> to convert fluorescence to concentrations of product formed (as a proxy for enzyme activity).</p>
 <section id="protocol-overview" class="level2" data-number="1">
 <h2 data-number="1" class="anchored" data-anchor-id="protocol-overview"><span class="header-section-number">1</span> Protocol overview</h2>
 <section id="before-starting-the-assay" class="level3" data-number="1.1">
 <h3 data-number="1.1" class="anchored" data-anchor-id="before-starting-the-assay"><span class="header-section-number">1.1</span> Before starting the assay</h3>
-<p>Decide which enzymes you want to target, see <a href="#tbl-subs">Table&nbsp;1</a>.</p>
 <p>You need to prepare buffer solutions, substrate solutions and stop solutions before starting the assay, see <a href="#sec-solution_prep">Section&nbsp;2</a> for details and storage times. The preparation of all solutions is quite time consuming so allocate one day for it.</p>
-<p>You also need to prepare the soil suspensions in advance. Previous versions of this protocol has said that suspensions should be prepared on the day of the assay but the suspensions seem to be stable for at least a week, so they can be prepared in advance. It is always a good idea to compare activities from a freshly made suspension with a stored one to optimize storage for your particular soil type.</p>
+<p>You also need to prepare the soil suspensions <a href="#sec-soil_susp">Section&nbsp;2.5</a> in advance. Previous versions of this protocol has said that suspensions should be prepared on the day of the assay but the suspensions seem to be stable for at least a week, so they can be prepared in advance. It is, however, always a good idea to compare activities from a freshly made suspension with a stored one to optimize storage for your particular soil type.</p>
 </section>
 <section id="doing-the-assay" class="level3" data-number="1.2">
 <h3 data-number="1.2" class="anchored" data-anchor-id="doing-the-assay"><span class="header-section-number">1.2</span> Doing the assay</h3>
@@ -148,7 +147,7 @@ quenching = incubated/MUB_{standard}
 <p>If the value is &gt;1, you have no quenching and if it is &lt;1 there is some quenching. Usually, a value &lt;0.6 means that there is too much quenching and you may need to dilute the sample and re-run the incubation with a lower soil concentration.</p>
 <p>You could also correct for quenching:</p>
 <p><span class="math display">\[
-fluorescence_{corrected} = fluorescence_{net} \times (1-quenching)
+fluorescence_{corrected} = fluorescence_{net} / quenching
 \]</span></p>
 </section>
 <section id="standard-curve" class="level3" data-number="1.5">
@@ -214,6 +213,18 @@ g_{substrate} = molarity \times volume \times molecular weight
 <p>Dissolve 1 g NaOH in 50 ml sodium acetate buffer</p>
 <p><em>Storage</em>: +4℃</p>
 </section>
+<section id="sec-soil_susp" class="level3" data-number="2.5">
+<h3 data-number="2.5" class="anchored" data-anchor-id="sec-soil_susp"><span class="header-section-number">2.5</span> Soil suspension</h3>
+<p>Soil suspensions are done by mixing soil with sodium acetate buffer into a homogeneous ‘soil-slurry’. In, the original protocol by <span class="citation" data-cites="saiya-cork2002">Saiya-Cork, Sinsabaugh, and Zak (<a href="#ref-saiya-cork2002" role="doc-biblioref">2002</a>)</span>, the assay is done within 48h of collection and fresh forest floor material is homogenized in the buffer with a mixer.</p>
+<p>The assay also works with freshly frozen or freeze-dried soils. Some caution should be taken when assaying air dried soil since there will be some biologic activity during drying at room temperature. Drying in heat (&gt;70℃) may cause denaturation of enzymes.</p>
+<p>Soil concentrations in the suspension needs to be optimized for each soil type, but a rule of thumb for organic forest soils is 0.001 gOM/ml. To get a representative sample, you can start out by doing a high concentration slurry and then dilute it to an appropriate final concentration. Alternatively, homogenize the soil in a large volume of sodium acetate buffer.</p>
+<p><em>Examples</em>:</p>
+<ul>
+<li><p>Homogenise 0.5 g of soil in 500 ml sodium acetate buffer.</p></li>
+<li><p>Homogenise 5 g of soil in 500 ml sodium acetate buffer and dilute to final concentration (x10 to get 0.001 g/ml).</p></li>
+</ul>
+<p>Homogenization methods may differ depending on soil type and how the sample has been processed prior to measuring enzyme activities. Mechanical homogenization of large particles can be done by using e.g.&nbsp;a stick blender or another type of mixer. For samples that have been homogenized before (e.g.&nbsp;milled), it may be enough with shaking/vortexing to make a homogeneous suspension.</p>
+</section>
 </section>
 <section id="enzymes-and-substrates" class="level2" data-number="3">
 <h2 data-number="3" class="anchored" data-anchor-id="enzymes-and-substrates"><span class="header-section-number">3</span> Enzymes and substrates</h2>
@@ -221,10 +232,10 @@ g_{substrate} = molarity \times volume \times molecular weight
 <table class="table">
 <caption>Table&nbsp;1: Hydrolytic enzymes that can be targeted using the method outlined in this protocol.</caption>
 <colgroup>
-<col style="width: 12%">
-<col style="width: 5%">
-<col style="width: 66%">
-<col style="width: 15%">
+<col style="width: 23%">
+<col style="width: 23%">
+<col style="width: 30%">
+<col style="width: 23%">
 </colgroup>
 <thead>
 <tr class="header">
@@ -285,16 +296,130 @@ g_{substrate} = molarity \times volume \times molecular weight
 <h2 data-number="4" class="anchored" data-anchor-id="plate-setups"><span class="header-section-number">4</span> Plate setups</h2>
 <div id="fig-plate_setup" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
-<p><img src="Figures/Plate_setup_hydro.JPG" class="img-fluid figure-img"></p>
+<p><img src="Figures/Plate_setup_hydro.JPG" class="img-fluid figure-img" width="391"></p>
 <p></p><figcaption class="figure-caption">Figure&nbsp;1: Plate setup for hydrolytic enzyme assay. The same setup is used for incubates, T0 control and quenching control plates</figcaption><p></p>
 </figure>
 </div>
 <div id="fig-plate_standard" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
-<p><img src="Figures/Plate_setup_standard.JPG" class="img-fluid figure-img"></p>
+<p><img src="Figures/Plate_setup_standard.JPG" class="img-fluid figure-img" width="557"></p>
 <p></p><figcaption class="figure-caption">Figure&nbsp;2: Plate setup for standard curve</figcaption><p></p>
 </figure>
 </div>
+</section>
+<section id="chemical-information-risk-assessment" class="level2" data-number="5">
+<h2 data-number="5" class="anchored" data-anchor-id="chemical-information-risk-assessment"><span class="header-section-number">5</span> Chemical information, risk assessment</h2>
+<table class="table">
+<colgroup>
+<col style="width: 35%">
+<col style="width: 16%">
+<col style="width: 16%">
+<col style="width: 16%">
+<col style="width: 16%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Alkali188997-57-4Chemical</th>
+<th>Formula</th>
+<th>CAS-number</th>
+<th>Storage conditions</th>
+<th>Hazards</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>4-MUB-𝛽-D-cellobioside</td>
+<td>C<sub>22</sub>H<sub>28</sub>O<sub>13</sub></td>
+<td>72626-61-0</td>
+<td>2-8℃</td>
+<td>None</td>
+</tr>
+<tr class="even">
+<td>4-MUB-𝛽-D-glucopyranoside</td>
+<td>C<sub>16</sub>H<sub>18</sub>O<sub>8</sub></td>
+<td>18997-57-4</td>
+<td>-20℃</td>
+<td>None</td>
+</tr>
+<tr class="odd">
+<td>4-MUB-N-acetyl-𝛽-D-glucosaminide</td>
+<td>C<sub>18</sub>H<sub>21</sub>NO<sub>8</sub></td>
+<td>37067-30-4</td>
+<td>-20℃</td>
+<td>None</td>
+</tr>
+<tr class="even">
+<td>4-MUB-𝛽-D-N-diacetyl-chitobioside</td>
+<td>C<sub>26</sub>H<sub>34</sub>N<sub>2</sub>O<sub>13</sub> · H<sub>2</sub>O</td>
+<td>53643-12-2</td>
+<td>-20℃</td>
+<td>None</td>
+</tr>
+<tr class="odd">
+<td>4-MUB-phosphate</td>
+<td>C<sub>10</sub>H<sub>9</sub>O<sub>6</sub>P</td>
+<td>3368-04-5</td>
+<td>-20℃</td>
+<td>None</td>
+</tr>
+<tr class="even">
+<td>4-MUB-𝛽-D-xylopyranoside</td>
+<td>C<sub>15</sub>H<sub>16</sub>O<sub>7</sub></td>
+<td>6734-333-4</td>
+<td>-20℃</td>
+<td>None</td>
+</tr>
+<tr class="odd">
+<td>L-leucine-7-amido-4-MUC-hydrochloride</td>
+<td>C<sub>16</sub>H<sub>20</sub>N<sub>2</sub>O<sub>3</sub> · HCl</td>
+<td>62480-44-8</td>
+<td>-20℃</td>
+<td>None</td>
+</tr>
+<tr class="even">
+<td>4-methylumbelliferone (MUB)</td>
+<td>C<sub>10</sub>H<sub>8</sub>O<sub>3</sub></td>
+<td>90-33-5</td>
+<td>2-8℃</td>
+<td>None</td>
+</tr>
+<tr class="odd">
+<td>7-amino-4-methylcoumarin (MUC)</td>
+<td>C<sub>10</sub>H<sub>9</sub>NO<sub>2</sub></td>
+<td>26093-31-2</td>
+<td>2-8℃</td>
+<td>None</td>
+</tr>
+<tr class="even">
+<td>Sodium acetate</td>
+<td>C<sub>2</sub>H<sub>3</sub>NaO<sub>2</sub></td>
+<td>127-09-3</td>
+<td>Room temperature</td>
+<td>None</td>
+</tr>
+<tr class="odd">
+<td>Sodium hydroxide</td>
+<td>NaOH</td>
+<td>1310-73-2</td>
+<td>Room temperature</td>
+<td>Alkaline</td>
+</tr>
+<tr class="even">
+<td>Glacial acetic acid</td>
+<td>CH<sub>3</sub>CO<sub>2</sub>H</td>
+<td>64-19-7</td>
+<td>Room temperature</td>
+<td>Acid, flammable</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
 
 </section>
 
