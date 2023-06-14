@@ -84,7 +84,7 @@ div.csl-indent {
     <div>
     <div class="quarto-title-meta-heading">Modified</div>
     <div class="quarto-title-meta-contents">
-      <p class="date-modified">June 13, 2023</p>
+      <p class="date-modified">June 14, 2023</p>
     </div>
   </div>
     
@@ -93,96 +93,18 @@ div.csl-indent {
 
 </header>
 
-<p>This protocol describes how to estimate potential activities of extracellular hydrolytic enzymes using a fluorescence based method outlined in <span class="citation" data-cites="saiya-cork2002">Saiya-Cork, Sinsabaugh, and Zak (<a href="#ref-saiya-cork2002" role="doc-biblioref">2002</a>)</span>. In short, soil or litter suspensions are incubated in a solution containing a substrate that can be hydrolyzed by the enzyme you are targeting. At the end of the incubation period, the reaction is stopped by adding NaOH which raises the pH and the hydrolyzed substrate starts to fluoresce. You measure fluorescence on a fluorescence spectrometer, and use standard curves <a href="#sec-standard_curve">Section&nbsp;2.3.2</a> to convert fluorescence to concentrations of product formed.</p>
-<div id="tbl-substrates" class="anchored">
-<table class="table">
-<caption>Table&nbsp;1: Hydrolytic enzymes that can be targeted using the method outlined in this protocol</caption>
-<colgroup>
-<col style="width: 11%">
-<col style="width: 5%">
-<col style="width: 60%">
-<col style="width: 14%">
-<col style="width: 7%">
-</colgroup>
-<thead>
-<tr class="header">
-<th>Enzyme</th>
-<th>Abbreviation</th>
-<th>Function</th>
-<th>Substrate</th>
-<th>Standard substrate</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>𝛽-D-Cellobiohydrolase</td>
-<td>CBH</td>
-<td>Releases cellobiose from cellulose</td>
-<td>4-MUB-𝛽-D-cellobioside</td>
-<td>MUB</td>
-</tr>
-<tr class="even">
-<td>𝛽-Glucosidase</td>
-<td>BG</td>
-<td>Releases glucose from cellulose and cellobiose</td>
-<td>4-MUB-𝛽-D-glucopyranoside</td>
-<td>MUB</td>
-</tr>
-<tr class="odd">
-<td>N-acetyl-𝛽-D-glucosaminidase</td>
-<td>NAG</td>
-<td>Releases glucosamine from chitin and similar polymers. Indicator of organic N turnover (and microbial/fungal N recycling)</td>
-<td>4-MUB-N-acetyl-𝛽-D-glucosaminide</td>
-<td>MUB</td>
-</tr>
-<tr class="even">
-<td>Chitobiohydrolase</td>
-<td>CiBH</td>
-<td>Cleaves disaccharides of glucosamine from the ends of chitin chains</td>
-<td>4-MUB-𝛽-D-N-diacetyl-chitobioside</td>
-<td>MUB</td>
-</tr>
-<tr class="odd">
-<td>Acid phosphatase</td>
-<td>aP</td>
-<td>Releases inorganic phosphatase from organic matter; phosphorus mineralization: organic phosphorus hydrolysis</td>
-<td>4-MUB-phosphate</td>
-<td>MUB</td>
-</tr>
-<tr class="even">
-<td>𝛽-Xylosidase</td>
-<td>BXD</td>
-<td>Degrades the xylose component of hemicellulose</td>
-<td>4-MUB-𝛽-D-xylopyranoside</td>
-<td>MUB</td>
-</tr>
-<tr class="odd">
-<td>Leucine aminopeptidase</td>
-<td>LAP</td>
-<td>Releases amino acids from protein; catalyzes the hydrolysis of leucine residues at the N-terminus of peptides and proteins; organic nitrogen polypeptide hydrolysis</td>
-<td>L-leucine-7-amido-4-MUC-hydrochloride</td>
-<td>MUC</td>
-</tr>
-<tr class="even">
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-</tbody>
-</table>
-</div>
+<p>This protocol describes how to estimate potential activities of extracellular hydrolytic enzymes using a fluorescence based, end-point analysis, method outlined in <span class="citation" data-cites="saiya-cork2002">Saiya-Cork, Sinsabaugh, and Zak (<a href="#ref-saiya-cork2002" role="doc-biblioref">2002</a>)</span>. In short, soil or litter suspensions are incubated in a solution containing a substrate that can be hydrolyzed by the enzyme you are targeting. At the end of the incubation period, the reaction is stopped by adding NaOH which raises the pH and the hydrolyzed substrate starts to fluoresce. You measure fluorescence on a fluorescence spectrometer, and use standard curves <a href="#sec-standard_curve">Section&nbsp;2.3.2</a> to convert fluorescence to concentrations of product formed (as a proxy for enzyme activity).</p>
 <section id="protocol-overview" class="level2" data-number="1">
 <h2 data-number="1" class="anchored" data-anchor-id="protocol-overview"><span class="header-section-number">1</span> Protocol overview</h2>
 <section id="before-starting-the-assay" class="level3" data-number="1.1">
 <h3 data-number="1.1" class="anchored" data-anchor-id="before-starting-the-assay"><span class="header-section-number">1.1</span> Before starting the assay</h3>
+<p>Decide which enzymes you want to target, see <a href="#tbl-subs">Table&nbsp;1</a>.</p>
 <p>You need to prepare buffer solutions, substrate solutions and stop solutions before starting the assay, see <a href="#sec-solution_prep">Section&nbsp;2</a> for details and storage times. The preparation of all solutions is quite time consuming so allocate one day for it.</p>
 <p>You also need to prepare the soil suspensions in advance. Previous versions of this protocol has said that suspensions should be prepared on the day of the assay but the suspensions seem to be stable for at least a week, so they can be prepared in advance. It is always a good idea to compare activities from a freshly made suspension with a stored one to optimize storage for your particular soil type.</p>
 </section>
 <section id="doing-the-assay" class="level3" data-number="1.2">
 <h3 data-number="1.2" class="anchored" data-anchor-id="doing-the-assay"><span class="header-section-number">1.2</span> Doing the assay</h3>
-<p>The assay is done in black 96-well flat-bottom microplates with four technical replicates of each soil suspension (24 samples/plate). Prepare three identical plates with soil suspensions; one for doing the incubation, one fluorescence control <a href="#sec-fluorescence_ctrl">Section&nbsp;1.3</a> and one quenching control <a href="#sec-quenching_ctrl">Section&nbsp;1.4</a>.</p>
+<p>The assay is done in black 96-well flat-bottom microplates with four technical replicates of each soil suspension (24 samples/plate); see <a href="#fig-plate_setup">Figure&nbsp;1</a>. Prepare three identical plates with soil suspensions; one for doing the incubation, one fluorescence control <a href="#sec-fluorescence_ctrl">Section&nbsp;1.3</a> and one quenching control <a href="#sec-quenching_ctrl">Section&nbsp;1.4</a>.</p>
 <ol type="1">
 <li>Pipette 200 µl of the soil suspension into each well (4 replicates/sample)</li>
 <li>Pipette 50 µl of enzyme substrate into each well (use multi-channel pipette)</li>
@@ -214,10 +136,12 @@ div.csl-indent {
 <p><span class="math display">\[
 fluorescence_{net} = incubated - T_0
 \]</span></p>
+<p><strong>Note</strong>: In previous versions of the protocol, a heated (&gt;90℃) sub-sample has been used as a fluorescence control instead of using the T<sub>0</sub> approach outlined in this version. The reason for this is some observations of increased fluorescence after heating, relative to to the non-heated incubation, especially when working with soils with moderate to high mineral content.</p>
+<p>The T<sub>0</sub> approach could, however, be replaced by a heated control that is incubated for the same amount of time as the non-heated sample.</p>
 </section>
 <section id="sec-quenching_ctrl" class="level3" data-number="1.4">
 <h3 data-number="1.4" class="anchored" data-anchor-id="sec-quenching_ctrl"><span class="header-section-number">1.4</span> Quenching control</h3>
-<p>Quenching is a form of inhibition of fluorescence (e.g.&nbsp;caused by complex formation with the soil in the suspension). You need to test the level of quenching to determine whether your measurements are “ok”. You do this by incubating the soil suspensions with a standard solution of MUB or MUC (which are the fluorescent components in the enzyme substrates; see <span class="citation" data-cites="tab-substrates">(<a href="#ref-tab-substrates" role="doc-biblioref"><strong>tab-substrates?</strong></a>)</span>. A 30-60 min incubation period is usually enough. Calculate the quenching ratio:</p>
+<p>Quenching is a form of inhibition of fluorescence (e.g.&nbsp;caused by complex formation with the soil in the suspension). You need to test the level of quenching to determine whether your measurements are “ok”. You do this by incubating the soil suspensions with a standard solution of MUB or MUC (which are the fluorescent components in the enzyme substrates. A 30-60 min incubation period is usually enough. Calculate the quenching ratio:</p>
 <p><span class="math display">\[
 quenching = incubated/MUB_{standard}
 \]</span></p>
@@ -226,6 +150,10 @@ quenching = incubated/MUB_{standard}
 <p><span class="math display">\[
 fluorescence_{corrected} = fluorescence_{net} \times (1-quenching)
 \]</span></p>
+</section>
+<section id="standard-curve" class="level3" data-number="1.5">
+<h3 data-number="1.5" class="anchored" data-anchor-id="standard-curve"><span class="header-section-number">1.5</span> Standard curve</h3>
+<p>The standard solutions of MUB (for CBH, BG, NAG, CiBH, aP, and BXD) and MUC (for LAP) are used to make standard curves to be able to convert fluorescence to amounts of formed product (as a proxy for enzyme activity). You only have to do the standard curve once per “assay round”. See <a href="#fig-plate_standard">Figure&nbsp;2</a> for plate setup.</p>
 </section>
 </section>
 <section id="sec-solution_prep" class="level2" data-number="2">
@@ -238,11 +166,12 @@ fluorescence_{corrected} = fluorescence_{net} \times (1-quenching)
 <li><p>Dissolve 4.1015 g of sodium acetate in diH<sub>2</sub>O</p></li>
 <li><p>Adjust pH with glacial acetic acid</p></li>
 </ul>
-<p>The buffer should be stored at +4℃. The buffer can be uses at least a week after preparation.</p>
+<p><em>Storage</em>: +4℃. The buffer can be uses at least a week after preparation.</p>
 </section>
 <section id="sec-fluo_subs" class="level3" data-number="2.2">
 <h3 data-number="2.2" class="anchored" data-anchor-id="sec-fluo_subs"><span class="header-section-number">2.2</span> Fluorescent substrates (200 µM)</h3>
 <p>Dissolve the substrates in 50 mM sodium acetate buffer <a href="#sec-sodium_acetate">Section&nbsp;2.1</a>. The substrates are difficult to dissolve so you may need to use a water bath at moderate heat and shake them from time to time, or use a sonicator. Calculate how much of each substrate solution you will need for all your samples and prepare solutions in bulk. You can prepare aliquots with enough volume for one or two plates (~ 5 ml/plate) and store them at -20℃ (for several months).</p>
+<p><em>Storage</em>: -20℃ (at least two months).</p>
 <p>Formula for calculating amounts of substrate needed:</p>
 <p><span class="math display">\[
 g_{substrate} = molarity \times volume \times molecular weight
@@ -259,16 +188,17 @@ g_{substrate} = molarity \times volume \times molecular weight
 </section>
 <section id="sec-standards" class="level3" data-number="2.3">
 <h3 data-number="2.3" class="anchored" data-anchor-id="sec-standards"><span class="header-section-number">2.3</span> Standard solutions</h3>
-<p>The standard solutions of MUB (for CBH, BG, NAG, CiBH, aP, and BXD) and MUC (for LAP) are used to make standard curves. You only have to do the standard curve once per “assay round”. In addition, one point of the standard curve (e.g.&nbsp;9 µM) should be used for the quenching control, therefore you will need to prepare a larger volume of that concentration.</p>
-<section id="prepare-stock-solution-1-mm" class="level4" data-number="2.3.1">
-<h4 data-number="2.3.1" class="anchored" data-anchor-id="prepare-stock-solution-1-mm"><span class="header-section-number">2.3.1</span> Prepare stock solution (1 mM)</h4>
+<section id="stock-solution-1-mm" class="level4" data-number="2.3.1">
+<h4 data-number="2.3.1" class="anchored" data-anchor-id="stock-solution-1-mm"><span class="header-section-number">2.3.1</span> Stock solution (1 mM)</h4>
 <ul>
 <li><p>MUB (4-methylumbelliferone): <strong>8.8085 mg/50 ml acetate buffer</strong></p></li>
 <li><p>MUC (7-amino-4-methylcoumarin): <strong>8.759 mg/50 ml acetate buffer</strong></p></li>
 </ul>
+<p>Remember: one point of the standard curve (e.g.&nbsp;9 µM) should be used for the quenching control, therefore you will need to prepare a larger volume of that concentration.</p>
+<p><em>Storage</em>: -20℃ for at least two months</p>
 </section>
 <section id="sec-standard_curve" class="level4" data-number="2.3.2">
-<h4 data-number="2.3.2" class="anchored" data-anchor-id="sec-standard_curve"><span class="header-section-number">2.3.2</span> Prepare the standard curve</h4>
+<h4 data-number="2.3.2" class="anchored" data-anchor-id="sec-standard_curve"><span class="header-section-number">2.3.2</span> Standard curve</h4>
 <p>100 µM = 3 ml of stock (1 mM) in 27 ml acetate buffer</p>
 <p>90 µM = 27 ml of 100 µM in 3 ml acetate buffer</p>
 <p>60 µM = 20 ml of 90 µM in 10 ml acetate buffer</p>
@@ -277,9 +207,95 @@ g_{substrate} = molarity \times volume \times molecular weight
 <p>3 µM = 10 ml of 9 µM in 20 ml acetate buffer</p>
 <p>1 µM = 10 ml of 3 µM in 20 ml acetate buffer</p>
 <p>0 µM = acetate buffer</p>
+</section>
+</section>
+<section id="stop-solution-naoh-0.5-m" class="level3" data-number="2.4">
+<h3 data-number="2.4" class="anchored" data-anchor-id="stop-solution-naoh-0.5-m"><span class="header-section-number">2.4</span> Stop solution, NaOH (0.5 M)</h3>
+<p>Dissolve 1 g NaOH in 50 ml sodium acetate buffer</p>
+<p><em>Storage</em>: +4℃</p>
+</section>
+</section>
+<section id="enzymes-and-substrates" class="level2" data-number="3">
+<h2 data-number="3" class="anchored" data-anchor-id="enzymes-and-substrates"><span class="header-section-number">3</span> Enzymes and substrates</h2>
+<div id="tbl-subs" class="anchored">
+<table class="table">
+<caption>Table&nbsp;1: Hydrolytic enzymes that can be targeted using the method outlined in this protocol.</caption>
+<colgroup>
+<col style="width: 12%">
+<col style="width: 5%">
+<col style="width: 66%">
+<col style="width: 15%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Enzyme</th>
+<th>Abbreviation</th>
+<th>Function</th>
+<th>Substrate</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>𝛽-D-Cellobiohydrolase</td>
+<td>CBH</td>
+<td>Releases cellobiose from cellulose</td>
+<td>4-MUB-𝛽-D-cellobioside</td>
+</tr>
+<tr class="even">
+<td>𝛽-Glucosidase</td>
+<td>BG</td>
+<td>Releases glucose from cellulose and cellobiose</td>
+<td>4-MUB-𝛽-D-glucopyranoside</td>
+</tr>
+<tr class="odd">
+<td>N-acetyl-𝛽-D-glucosaminidase</td>
+<td>NAG</td>
+<td>Releases glucosamine from chitin and similar polymers. Indicator of organic N turnover (and microbial/fungal N recycling)</td>
+<td>4-MUB-N-acetyl-𝛽-D-glucosaminide</td>
+</tr>
+<tr class="even">
+<td>Chitobiohydrolase</td>
+<td>CiBH</td>
+<td>Cleaves disaccharides of glucosamine from the ends of chitin chains</td>
+<td>4-MUB-𝛽-D-N-diacetyl-chitobioside</td>
+</tr>
+<tr class="odd">
+<td>Acid phosphatase</td>
+<td>aP</td>
+<td>Releases inorganic phosphatase from organic matter; phosphorus mineralization: organic phosphorus hydrolysis</td>
+<td>4-MUB-phosphate</td>
+</tr>
+<tr class="even">
+<td>𝛽-Xylosidase</td>
+<td>BXD</td>
+<td>Degrades the xylose component of hemicellulose</td>
+<td>4-MUB-𝛽-D-xylopyranoside</td>
+</tr>
+<tr class="odd">
+<td>Leucine aminopeptidase</td>
+<td>LAP</td>
+<td>Releases amino acids from protein; catalyzes the hydrolysis of leucine residues at the N-terminus of peptides and proteins; organic nitrogen polypeptide hydrolysis</td>
+<td>L-leucine-7-amido-4-MUC-hydrochloride</td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="plate-setups" class="level2" data-number="4">
+<h2 data-number="4" class="anchored" data-anchor-id="plate-setups"><span class="header-section-number">4</span> Plate setups</h2>
+<div id="fig-plate_setup" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="Figures/Plate_setup_hydro.JPG" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">Figure&nbsp;1: Plate setup for hydrolytic enzyme assay. The same setup is used for incubates, T0 control and quenching control plates</figcaption><p></p>
+</figure>
+</div>
+<div id="fig-plate_standard" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="Figures/Plate_setup_standard.JPG" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">Figure&nbsp;2: Plate setup for standard curve</figcaption><p></p>
+</figure>
+</div>
 
-</section>
-</section>
 </section>
 
 <div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" role="doc-bibliography">

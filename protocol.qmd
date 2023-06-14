@@ -10,29 +10,7 @@ label: tbl
 number-sections: true
 ---
 
-This protocol describes how to estimate potential activities of extracellular hydrolytic enzymes using a fluorescence based method outlined in @saiya-cork2002. In short, soil or litter suspensions are incubated in a solution containing a substrate that can be hydrolyzed by the enzyme you are targeting. At the end of the incubation period, the reaction is stopped by adding NaOH which raises the pH and the hydrolyzed substrate starts to fluoresce. You measure fluorescence on a fluorescence spectrometer, and use standard curves @sec-standard_curve to convert fluorescence to concentrations of product formed.
-
-+------------------------------+--------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------+--------------------+
-| Enzyme                       | Abbreviation | Function                                                                                                                                                            | Substrate                             | Standard substrate |
-+==============================+==============+=====================================================================================================================================================================+=======================================+====================+
-| 𝛽-D-Cellobiohydrolase        | CBH          | Releases cellobiose from cellulose                                                                                                                                  | 4-MUB-𝛽-D-cellobioside                | MUB                |
-+------------------------------+--------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------+--------------------+
-| 𝛽-Glucosidase                | BG           | Releases glucose from cellulose and cellobiose                                                                                                                      | 4-MUB-𝛽-D-glucopyranoside             | MUB                |
-+------------------------------+--------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------+--------------------+
-| N-acetyl-𝛽-D-glucosaminidase | NAG          | Releases glucosamine from chitin and similar polymers. Indicator of organic N turnover (and microbial/fungal N recycling)                                           | 4-MUB-N-acetyl-𝛽-D-glucosaminide      | MUB                |
-+------------------------------+--------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------+--------------------+
-| Chitobiohydrolase            | CiBH         | Cleaves disaccharides of glucosamine from the ends of chitin chains                                                                                                 | 4-MUB-𝛽-D-N-diacetyl-chitobioside     | MUB                |
-+------------------------------+--------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------+--------------------+
-| Acid phosphatase             | aP           | Releases inorganic phosphatase from organic matter; phosphorus mineralization: organic phosphorus hydrolysis                                                        | 4-MUB-phosphate                       | MUB                |
-+------------------------------+--------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------+--------------------+
-| 𝛽-Xylosidase                 | BXD          | Degrades the xylose component of hemicellulose                                                                                                                      | 4-MUB-𝛽-D-xylopyranoside              | MUB                |
-+------------------------------+--------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------+--------------------+
-| Leucine aminopeptidase       | LAP          | Releases amino acids from protein; catalyzes the hydrolysis of leucine residues at the N-terminus of peptides and proteins; organic nitrogen polypeptide hydrolysis | L-leucine-7-amido-4-MUC-hydrochloride | MUC                |
-+------------------------------+--------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------+--------------------+
-|                              |              |                                                                                                                                                                     |                                       |                    |
-+------------------------------+--------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------+--------------------+
-
-: Hydrolytic enzymes that can be targeted using the method outlined in this protocol {#tbl-substrates}
+This protocol describes how to estimate potential activities of extracellular hydrolytic enzymes using a fluorescence based, end-point analysis, method outlined in @saiya-cork2002. In short, soil or litter suspensions are incubated in a solution containing a substrate that can be hydrolyzed by the enzyme you are targeting, see @tbl-subs. At the end of the incubation period, the reaction is stopped by adding NaOH which raises the pH and the hydrolyzed substrate starts to fluoresce. You measure fluorescence on a fluorescence spectrometer, and use standard curves @sec-standard_curve to convert fluorescence to concentrations of product formed (as a proxy for enzyme activity).
 
 ## Protocol overview
 
@@ -40,11 +18,11 @@ This protocol describes how to estimate potential activities of extracellular hy
 
 You need to prepare buffer solutions, substrate solutions and stop solutions before starting the assay, see @sec-solution_prep for details and storage times. The preparation of all solutions is quite time consuming so allocate one day for it.
 
-You also need to prepare the soil suspensions in advance. Previous versions of this protocol has said that suspensions should be prepared on the day of the assay but the suspensions seem to be stable for at least a week, so they can be prepared in advance. It is always a good idea to compare activities from a freshly made suspension with a stored one to optimize storage for your particular soil type.
+You also need to prepare the soil suspensions @sec-soil_susp in advance. Previous versions of this protocol has said that suspensions should be prepared on the day of the assay but the suspensions seem to be stable for at least a week, so they can be prepared in advance. It is, however, always a good idea to compare activities from a freshly made suspension with a stored one to optimize storage for your particular soil type.
 
 ### Doing the assay
 
-The assay is done in black 96-well flat-bottom microplates with four technical replicates of each soil suspension (24 samples/plate). Prepare three identical plates with soil suspensions; one for doing the incubation, one fluorescence control @sec-fluorescence_ctrl and one quenching control @sec-quenching_ctrl.
+The assay is done in black 96-well flat-bottom microplates with four technical replicates of each soil suspension (24 samples/plate); see @fig-plate_setup. Prepare three identical plates with soil suspensions; one for doing the incubation, one fluorescence control @sec-fluorescence_ctrl and one quenching control @sec-quenching_ctrl.
 
 1.  Pipette 200 µl of the soil suspension into each well (4 replicates/sample)
 2.  Pipette 50 µl of enzyme substrate into each well (use multi-channel pipette)
@@ -75,9 +53,13 @@ $$
 fluorescence_{net} = incubated - T_0
 $$
 
+**Note**: In previous versions of the protocol, a heated (\>90℃) sub-sample has been used as a fluorescence control instead of using the T<sub>0</sub> approach outlined in this version. The reason for this is some observations of increased fluorescence after heating, relative to to the non-heated incubation, especially when working with soils with moderate to high mineral content.
+
+The T<sub>0</sub> approach could, however, be replaced by a heated control that is incubated for the same amount of time as the non-heated sample.
+
 ### Quenching control {#sec-quenching_ctrl}
 
-Quenching is a form of inhibition of fluorescence (e.g. caused by complex formation with the soil in the suspension). You need to test the level of quenching to determine whether your measurements are "ok". You do this by incubating the soil suspensions with a standard solution of MUB or MUC (which are the fluorescent components in the enzyme substrates; see @tab-substrates. A 30-60 min incubation period is usually enough. Calculate the quenching ratio:
+Quenching is a form of inhibition of fluorescence (e.g. caused by complex formation with the soil in the suspension). You need to test the level of quenching to determine whether your measurements are "ok". You do this by incubating the soil suspensions with a standard solution of MUB or MUC (which are the fluorescent components in the enzyme substrates. A 30-60 min incubation period is usually enough. Calculate the quenching ratio:
 
 $$
 quenching = incubated/MUB_{standard}
@@ -88,8 +70,12 @@ If the value is \>1, you have no quenching and if it is \<1 there is some quench
 You could also correct for quenching:
 
 $$
-fluorescence_{corrected} = fluorescence_{net} \times (1-quenching)
+fluorescence_{corrected} = fluorescence_{net} / quenching
 $$
+
+### Standard curve
+
+The standard solutions of MUB (for CBH, BG, NAG, CiBH, aP, and BXD) and MUC (for LAP) are used to make standard curves to be able to convert fluorescence to amounts of formed product (as a proxy for enzyme activity). You only have to do the standard curve once per "assay round". See @fig-plate_standard for plate setup.
 
 ## Preparation of solutions {#sec-solution_prep}
 
@@ -131,19 +117,19 @@ $$
 
 -   LAP (L-leucine-7-amido-4-MUC-hydrochloride): **0.649 mg/10 ml acetate buffer**
 
-### Standard solutions  {#sec-standards}
+### Standard solutions {#sec-standards}
 
-The standard solutions of MUB (for CBH, BG, NAG, CiBH, aP, and BXD) and MUC (for LAP) are used to make standard curves. You only have to do the standard curve once per "assay round". In addition, one point of the standard curve (e.g. 9 µM) should be used for the quenching control, therefore you will need to prepare a larger volume of that concentration.
-
-*Storage*: -20℃ for at least two months
-
-#### Prepare stock solution (1 mM)
+#### Stock solution (1 mM)
 
 -   MUB (4-methylumbelliferone): **8.8085 mg/50 ml acetate buffer**
 
 -   MUC (7-amino-4-methylcoumarin): **8.759 mg/50 ml acetate buffer**
 
-#### Prepare the standard curve  {#sec-standard_curve}
+Remember: one point of the standard curve (e.g. 9 µM) should be used for the quenching control, therefore you will need to prepare a larger volume of that concentration.
+
+*Storage*: -20℃ for at least two months
+
+#### Standard curve {#sec-standard_curve}
 
 100 µM = 3 ml of stock (1 mM) in 27 ml acetate buffer
 
@@ -167,15 +153,56 @@ Dissolve 1 g NaOH in 50 ml sodium acetate buffer
 
 *Storage*: +4℃
 
-## Plate setup
+### Soil suspension {#sec-soil_susp}
 
-|     | 1   | 2   | 3   | 4   | 5   | 6   | 7   | 8   | 9   | 10  | 11  | 12  | 13  |
-|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|
-| A   | S1  | S3  |     |     |     |     |     |     |     |     |     |     |     |
-| B   | S1  | S3  |     |     |     |     |     |     |     |     |     |     |     |
-| C   | S1  | S3  |     |     |     |     |     |     |     |     |     |     |     |
-| D   | S1  | S3  |     |     |     |     |     |     |     |     |     |     |     |
-| E   | S2  | S4  |     |     |     |     |     |     |     |     |     |     |     |
-| F   | S2  | S4  |     |     |     |     |     |     |     |     |     |     |     |
-| G   | S2  | S4  |     |     |     |     |     |     |     |     |     |     |     |
-| H   | S2  | S4  |     |     |     |     |     |     |     |     |     |     |     |
+Soil suspensions are done by mixing soil with sodium acetate buffer into a homogeneous 'soil-slurry'. In, the original protocol by @saiya-cork2002, the assay is done within 48h of collection and fresh forest floor material is homogenized in the buffer with a mixer.
+
+The assay also works with freshly frozen or freeze-dried soils. Some caution should be taken when assaying air dried soil since there will be some biologic activity during drying at room temperature. Drying in heat (\>70℃) may cause denaturation of enzymes.
+
+Soil concentrations in the suspension needs to be optimized for each soil type, but a rule of thumb for organic forest soils is 0.001 gOM/ml. To get a representative sample, you can start out by doing a high concentration slurry and then dilute it to an appropriate final concentration. Alternatively, homogenize the soil in a large volume of sodium acetate buffer.
+
+*Examples*:
+
+-   Homogenise 0.5 g of soil in 500 ml sodium acetate buffer.
+
+-   Homogenise 5 g of soil in 500 ml sodium acetate buffer and dilute to final concentration (x10 to get 0.001 g/ml).
+
+Homogenization methods may differ depending on soil type and how the sample has been processed prior to measuring enzyme activities. Mechanical homogenization of large particles can be done by using e.g. a stick blender or another type of mixer. For samples that have been homogenized before (e.g. milled), it may be enough with shaking/vortexing to make a homogeneous suspension.
+
+## Enzymes and substrates
+
+| Enzyme                       | Abbreviation | Function                                                                                                                                                            | Substrate                             |
+|-----------------|-----------------|----------------------|-----------------|
+| 𝛽-D-Cellobiohydrolase        | CBH          | Releases cellobiose from cellulose                                                                                                                                  | 4-MUB-𝛽-D-cellobioside                |
+| 𝛽-Glucosidase                | BG           | Releases glucose from cellulose and cellobiose                                                                                                                      | 4-MUB-𝛽-D-glucopyranoside             |
+| N-acetyl-𝛽-D-glucosaminidase | NAG          | Releases glucosamine from chitin and similar polymers. Indicator of organic N turnover (and microbial/fungal N recycling)                                           | 4-MUB-N-acetyl-𝛽-D-glucosaminide      |
+| Chitobiohydrolase            | CiBH         | Cleaves disaccharides of glucosamine from the ends of chitin chains                                                                                                 | 4-MUB-𝛽-D-N-diacetyl-chitobioside     |
+| Acid phosphatase             | aP           | Releases inorganic phosphatase from organic matter; phosphorus mineralization: organic phosphorus hydrolysis                                                        | 4-MUB-phosphate                       |
+| 𝛽-Xylosidase                 | BXD          | Degrades the xylose component of hemicellulose                                                                                                                      | 4-MUB-𝛽-D-xylopyranoside              |
+| Leucine aminopeptidase       | LAP          | Releases amino acids from protein; catalyzes the hydrolysis of leucine residues at the N-terminus of peptides and proteins; organic nitrogen polypeptide hydrolysis | L-leucine-7-amido-4-MUC-hydrochloride |
+
+: Hydrolytic enzymes that can be targeted using the method outlined in this protocol. {#tbl-subs}
+
+## Plate setups
+
+![Plate setup for hydrolytic enzyme assay. The same setup is used for incubates, T0 control and quenching control plates](Figures/Plate_setup_hydro.JPG){#fig-plate_setup width="391"}
+
+![Plate setup for standard curve](Figures/Plate_setup_standard.JPG){#fig-plate_standard width="557"}
+
+## Chemical information, risk assessment
+
+| 188997-57-4Chemical                   | Formula                   | CAS-number | Storage | Hazards |
+|--------------------------|------------|------------|------------|------------|
+| 4-MUB-𝛽-D-cellobioside                | C~22~H~28~O~13~           | 72626-61-0 | 2-8℃    | None    |
+| 4-MUB-𝛽-D-glucopyranoside             | C~16~H~18~O~8~            | 18997-57-4 | -20℃    | None    |
+| 4-MUB-N-acetyl-𝛽-D-glucosaminide      | C~18~H~21~NO~8~           | 37067-30-4 | -20℃    | None    |
+| 4-MUB-𝛽-D-N-diacetyl-chitobioside     | C~26~H~34~N~2~O~13~       |            |         |         |
+| 4-MUB-phosphate                       | C~10~H~9~O~6~P            |            |         |         |
+| 4-MUB-𝛽-D-xylopyranoside              | C~15~H~16~O~7~            |            |         |         |
+| L-leucine-7-amido-4-MUC-hydrochloride | C~16~H~20~N~2~O~3~ · HCl  |            |         |         |
+| 4-methylumbelliferone (MUB)           | C~10~H~8~O~3~             | 90-33-5    | 2-8℃    | None    |
+| 7-amino-4-methylcoumarin (MUC)        | C~10~H~9~NO~2~            |            |         |         |
+| Sodium acetate                        | CH~3~COONa                |            |         |         |
+| Sodium hydroxide                      | NaOH                      |            |         |         |
+| Glacial acetic acid                   | CH~3~CO~2~H               |            |         |         |
+|                                       |                           |            |         |         |
