@@ -107,17 +107,17 @@ $$
 g_{substrate} = molarity \times volume \times molecular weight
 $$
 
--   CBH (4-MUB-𝛽-D-cellobioside): **1.000 mg/10 ml acetate buffer**
+-   CBH (4-MUB-$\beta$-D-cellobioside): **1.000 mg/10 ml acetate buffer**
 
--   BG (4-MUB-𝛽-D-glucopyranoside): **0.676 mg/10 ml acetate buffer**
+-   BG (4-MUB-$\beta$-D-glucopyranoside): **0.676 mg/10 ml acetate buffer**
 
--   NAG (4-MUB-N-acetyl-𝛽-D-glucosaminide): **0.758 mg/10 ml acetate buffer**
+-   NAG (4-MUB-N-acetyl-$\beta$-D-glucosaminide): **0.758 mg/10 ml acetate buffer**
 
--   CiBH (4-MUB-𝛽-D-N-diacetyl-chitobioside): **1.165 mg/10 ml acetate buffer**
+-   CiBH (4-MUB-$\beta$-D-N-diacetyl-chitobioside): **1.165 mg/10 ml acetate buffer**
 
 -   aP (4-MUB-phosphate): **0.512 mg/10 ml acetate buffer**
 
--   BXD (4-MUB-𝛽-D-xylopyranoside): **0.616 mg/10 ml acetate buffer**
+-   BXD (4-MUB-$\beta$-D-xylopyranoside): **0.616 mg/10 ml acetate buffer**
 
 -   LAP (L-leucine-7-amido-4-MUC-hydrochloride): **0.649 mg/10 ml acetate buffer**
 
@@ -176,13 +176,13 @@ Homogenization methods may differ depending on soil type and how the sample has 
 ## Enzymes and substrates
 
 | Enzyme                       | Abbreviation | Function                                                                                                                                                            | Substrate                             |
-|------------------|------------------|--------------------|------------------|
-| 𝛽-D-Cellobiohydrolase        | CBH          | Releases cellobiose from cellulose                                                                                                                                  | 4-MUB-𝛽-D-cellobioside                |
-| 𝛽-Glucosidase                | BG           | Releases glucose from cellulose and cellobiose                                                                                                                      | 4-MUB-𝛽-D-glucopyranoside             |
-| N-acetyl-𝛽-D-glucosaminidase | NAG          | Releases glucosamine from chitin and similar polymers. Indicator of organic N turnover (and microbial/fungal N recycling)                                           | 4-MUB-N-acetyl-𝛽-D-glucosaminide      |
-| Chitobiohydrolase            | CiBH         | Cleaves disaccharides of glucosamine from the ends of chitin chains                                                                                                 | 4-MUB-𝛽-D-N-diacetyl-chitobioside     |
+|------------------|------------------|-------------------|------------------|
+| $\beta$-D-Cellobiohydrolase  | CBH          | Releases cellobiose from cellulose                                                                                                                                  | 4-MUB-$\beta$-D-cellobioside                |
+| $\beta$-Glucosidase                | BG           | Releases glucose from cellulose and cellobiose                                                                                                                      | 4-MUB-𝛽$\beta$-D-glucopyranoside             |
+| N-acetyl-$\beta$-D-glucosaminidase | NAG          | Releases glucosamine from chitin and similar polymers. Indicator of organic N turnover (and microbial/fungal N recycling)                                           | 4-MUB-N-acetyl-$\beta$-D-glucosaminide      |
+| Chitobiohydrolase            | CiBH         | Cleaves disaccharides of glucosamine from the ends of chitin chains                                                                                                 | 4-MUB-$\beta$-D-N-diacetyl-chitobioside     |
 | Acid phosphatase             | aP           | Releases inorganic phosphatase from organic matter; phosphorus mineralization: organic phosphorus hydrolysis                                                        | 4-MUB-phosphate                       |
-| 𝛽-Xylosidase                 | BXD          | Degrades the xylose component of hemicellulose                                                                                                                      | 4-MUB-𝛽-D-xylopyranoside              |
+| $\beta$-Xylosidase                 | BXD          | Degrades the xylose component of hemicellulose                                                                                                                      | 4-MUB-$\beta$-D-xylopyranoside              |
 | Leucine aminopeptidase       | LAP          | Releases amino acids from protein; catalyzes the hydrolysis of leucine residues at the N-terminus of peptides and proteins; organic nitrogen polypeptide hydrolysis | L-leucine-7-amido-4-MUC-hydrochloride |
 
 : Hydrolytic enzymes that can be targeted using the method outlined in this protocol. {#tbl-subs}
@@ -201,12 +201,12 @@ Look up local rules/regulations for how to dispose of used and leftover chemical
 
 | Chemical                              | Formula                              | CAS-number | Storage conditions | Hazards         |
 |---------------|---------------|---------------|---------------|---------------|
-| 4-MUB-𝛽-D-cellobioside                | C~22~H~28~O~13~                      | 72626-61-0 | 2-8℃               | None            |
-| 4-MUB-𝛽-D-glucopyranoside             | C~16~H~18~O~8~                       | 18997-57-4 | -20℃               | None            |
-| 4-MUB-N-acetyl-𝛽-D-glucosaminide      | C~18~H~21~NO~8~                      | 37067-30-4 | -20℃               | None            |
-| 4-MUB-𝛽-D-N-diacetyl-chitobioside     | C~26~H~34~N~2~O~13~ · H<sub>2</sub>O | 53643-12-2 | -20℃               | None            |
+| 4-MUB-$\beta$-D-cellobioside                | C~22~H~28~O~13~                      | 72626-61-0 | 2-8℃               | None            |
+| 4-MUB-$\beta$-D-glucopyranoside             | C~16~H~18~O~8~                       | 18997-57-4 | -20℃               | None            |
+| 4-MUB-N-acetyl-$\beta$-D-glucosaminide      | C~18~H~21~NO~8~                      | 37067-30-4 | -20℃               | None            |
+| 4-MUB-$\beta$-D-N-diacetyl-chitobioside     | C~26~H~34~N~2~O~13~ · H<sub>2</sub>O | 53643-12-2 | -20℃               | None            |
 | 4-MUB-phosphate                       | C~10~H~9~O~6~P                       | 3368-04-5  | -20℃               | None            |
-| 4-MUB-𝛽-D-xylopyranoside              | C~15~H~16~O~7~                       | 6734-333-4 | -20℃               | None            |
+| 4-MUB-$\beta$-D-xylopyranoside              | C~15~H~16~O~7~                       | 6734-333-4 | -20℃               | None            |
 | L-leucine-7-amido-4-MUC-hydrochloride | C~16~H~20~N~2~O~3~ · HCl             | 62480-44-8 | -20℃               | None            |
 | 4-methylumbelliferone (MUB)           | C~10~H~8~O~3~                        | 90-33-5    | 2-8℃               | None            |
 | 7-amino-4-methylcoumarin (MUC)        | C~10~H~9~NO~2~                       | 26093-31-2 | 2-8℃               | None            |
