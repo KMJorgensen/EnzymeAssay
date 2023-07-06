@@ -12,15 +12,13 @@ number-sections: true
 
 This protocol describes how to estimate potential activities of extracellular hydrolytic enzymes using a fluorescence based, end-point analysis, method outlined in @saiya-cork2002. In short, soil or litter suspensions are incubated in a solution containing a substrate that can be hydrolyzed by the enzyme you are targeting, see @tbl-subs. At the end of the incubation period, the reaction is stopped by adding NaOH which raises the pH and the hydrolyzed substrate starts to fluoresce. You measure fluorescence on a fluorescence spectrometer, and use standard curves @sec-standard_curve to convert fluorescence to concentrations of product formed (as a proxy for enzyme activity).
 
-## Protocol overview
-
-### Before starting the assay
+## Before starting the assay
 
 You need to prepare buffer solutions, substrate solutions and stop solutions before starting the assay, see @sec-solution-prep for details and storage times. The preparation of all solutions is quite time consuming so allocate one day for it.
 
 You also need to prepare the soil suspensions @sec-soil-susp in advance. Previous versions of this protocol has said that suspensions should be prepared on the day of the assay but the suspensions seem to be stable for at least a week, so they can be prepared in advance. It is, however, always a good idea to compare activities from a freshly made suspension with a stored one to optimize storage for your particular soil type.
 
-### Doing the assay
+## Doing the assay
 
 The assay is done in black 96-well flat-bottom microplates with four technical replicates of each soil suspension (24 samples/plate); see @fig-plate-setup. Prepare three identical plates with soil suspensions; one for doing the incubation, one fluorescence control @sec-fluorescence-ctrl and one quenching control @sec-quenching-ctrl.
 
@@ -29,7 +27,7 @@ The assay is done in black 96-well flat-bottom microplates with four technical r
 3.  Incubate plate in darkness (cover with aluminium foil)
 4.  Stop the reaction by adding 10 µl of 0.5 M NaOH
 5.  Measure fluorescence using the following settings:
-    -   Excitation wawelength = 365 nm
+    -   Excitation wavelength = 365 nm
     -   Excitation slit = 2.5
     -   Emission wavelength = 450 nm
     -   Emission slit = 2.5
@@ -85,7 +83,7 @@ Times for incubations have to be optimized for your particular soil type, and al
 
 ### Sodium acetate buffer (50 mM) {#sec-sodium-acetate}
 
-Sodium acetate buffer is used to in the soil suspensions and to dissolve the fluorescent substrates @sec-fluo-subs. Adjust the pH with glacial acetic acid to resemble the pH of the soil (pH ≈ 5 for forest O horizon). pH should be below 7.
+Sodium acetate buffer is used for the soil suspensions and to dissolve the fluorescent substrates @sec-fluo-subs. Adjust the pH with glacial acetic acid to resemble the pH of the soil (pH ≈ 5 for forest O horizon). pH should be below 7.
 
 To prepare 1 l of buffer:
 
@@ -175,21 +173,21 @@ Homogenization methods may differ depending on soil type and how the sample has 
 
 ## Enzymes and substrates
 
-| Enzyme                       | Abbreviation | Function                                                                                                                                                            | Substrate                             |
-|------------------|------------------|-------------------|------------------|
-| $\beta$-D-Cellobiohydrolase  | CBH          | Releases cellobiose from cellulose                                                                                                                                  | 4-MUB-$\beta$-D-cellobioside                |
-| $\beta$-Glucosidase                | BG           | Releases glucose from cellulose and cellobiose                                                                                                                      | 4-MUB-𝛽$\beta$-D-glucopyranoside             |
-| N-acetyl-$\beta$-D-glucosaminidase | NAG          | Releases glucosamine from chitin and similar polymers. Indicator of organic N turnover (and microbial/fungal N recycling)                                           | 4-MUB-N-acetyl-$\beta$-D-glucosaminide      |
-| Chitobiohydrolase            | CiBH         | Cleaves disaccharides of glucosamine from the ends of chitin chains                                                                                                 | 4-MUB-$\beta$-D-N-diacetyl-chitobioside     |
-| Acid phosphatase             | aP           | Releases inorganic phosphatase from organic matter; phosphorus mineralization: organic phosphorus hydrolysis                                                        | 4-MUB-phosphate                       |
-| $\beta$-Xylosidase                 | BXD          | Degrades the xylose component of hemicellulose                                                                                                                      | 4-MUB-$\beta$-D-xylopyranoside              |
-| Leucine aminopeptidase       | LAP          | Releases amino acids from protein; catalyzes the hydrolysis of leucine residues at the N-terminus of peptides and proteins; organic nitrogen polypeptide hydrolysis | L-leucine-7-amido-4-MUC-hydrochloride |
+| Enzyme                             | Abbreviation | Function                                                                                                                                                            | Substrate                               |
+|------------------------------------|--------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------|
+| $\beta$-D-Cellobiohydrolase        | CBH          | Releases cellobiose from cellulose                                                                                                                                  | 4-MUB-$\beta$-D-cellobioside            |
+| $\beta$-Glucosidase                | BG           | Releases glucose from cellulose and cellobiose                                                                                                                      | 4-MUB-$\beta$-D-glucopyranoside         |
+| N-acetyl-$\beta$-D-glucosaminidase | NAG          | Releases glucosamine from chitin and similar polymers. Indicator of organic N turnover (and microbial/fungal N recycling)                                           | 4-MUB-N-acetyl-$\beta$-D-glucosaminide  |
+| Chitobiohydrolase                  | CiBH         | Cleaves disaccharides of glucosamine from the ends of chitin chains                                                                                                 | 4-MUB-$\beta$-D-N-diacetyl-chitobioside |
+| Acid phosphatase                   | aP           | Releases inorganic phosphatase from organic matter; phosphorus mineralization: organic phosphorus hydrolysis                                                        | 4-MUB-phosphate                         |
+| $\beta$-Xylosidase                 | BXD          | Degrades the xylose component of hemicellulose                                                                                                                      | 4-MUB-$\beta$-D-xylopyranoside          |
+| Leucine aminopeptidase             | LAP          | Releases amino acids from protein; catalyzes the hydrolysis of leucine residues at the N-terminus of peptides and proteins; organic nitrogen polypeptide hydrolysis | L-leucine-7-amido-4-MUC-hydrochloride   |
 
 : Hydrolytic enzymes that can be targeted using the method outlined in this protocol. {#tbl-subs}
 
 ## Plate setups
 
-![Plate setup for hydrolytic enzyme assay. The same setup is used for incubates, T0 control and quenching control plates](Figures/Plate_setup_hydro.JPG){#fig-plate-setup width="391"}
+![Plate setup for hydrolytic enzyme assay. The same setup is used for incubates, T<sub>0</sub> control and quenching control plates](Figures/Plate_setup_hydro.JPG){#fig-plate-setup width="391"}
 
 ![Plate setup for standard curve](Figures/Plate_setup_standard.JPG){#fig-plate-standard width="557"}
 
@@ -199,18 +197,18 @@ Although the chemicals used in the assay are, generally, not hazardous, regular 
 
 Look up local rules/regulations for how to dispose of used and leftover chemicals.
 
-| Chemical                              | Formula                              | CAS-number | Storage conditions | Hazards         |
-|---------------|---------------|---------------|---------------|---------------|
-| 4-MUB-$\beta$-D-cellobioside                | C~22~H~28~O~13~                      | 72626-61-0 | 2-8℃               | None            |
-| 4-MUB-$\beta$-D-glucopyranoside             | C~16~H~18~O~8~                       | 18997-57-4 | -20℃               | None            |
-| 4-MUB-N-acetyl-$\beta$-D-glucosaminide      | C~18~H~21~NO~8~                      | 37067-30-4 | -20℃               | None            |
-| 4-MUB-$\beta$-D-N-diacetyl-chitobioside     | C~26~H~34~N~2~O~13~ · H<sub>2</sub>O | 53643-12-2 | -20℃               | None            |
-| 4-MUB-phosphate                       | C~10~H~9~O~6~P                       | 3368-04-5  | -20℃               | None            |
-| 4-MUB-$\beta$-D-xylopyranoside              | C~15~H~16~O~7~                       | 6734-333-4 | -20℃               | None            |
-| L-leucine-7-amido-4-MUC-hydrochloride | C~16~H~20~N~2~O~3~ · HCl             | 62480-44-8 | -20℃               | None            |
-| 4-methylumbelliferone (MUB)           | C~10~H~8~O~3~                        | 90-33-5    | 2-8℃               | None            |
-| 7-amino-4-methylcoumarin (MUC)        | C~10~H~9~NO~2~                       | 26093-31-2 | 2-8℃               | None            |
-| Sodium acetate                        | C<sub>2</sub>H~3~NaO<sub>2</sub>     | 127-09-3   | Room temperature   | None            |
-| Sodium hydroxide                      | NaOH                                 | 1310-73-2  | Room temperature   | Alkaline        |
-| Glacial acetic acid                   | C<sub>2</sub>H<sub>4</sub>O~2~       | 64-19-7    | Room temperature   | Acid, flammable |
-|                                       |                                      |            |                    |                 |
+| Chemical                                | Formula                              | CAS-number | Storage conditions | Hazards         |
+|-----------------------------------------|--------------------------------------|------------|--------------------|-----------------|
+| 4-MUB-$\beta$-D-cellobioside            | C~22~H~28~O~13~                      | 72626-61-0 | 2-8℃               | None            |
+| 4-MUB-$\beta$-D-glucopyranoside         | C~16~H~18~O~8~                       | 18997-57-4 | -20℃               | None            |
+| 4-MUB-N-acetyl-$\beta$-D-glucosaminide  | C~18~H~21~NO~8~                      | 37067-30-4 | -20℃               | None            |
+| 4-MUB-$\beta$-D-N-diacetyl-chitobioside | C~26~H~34~N~2~O~13~ · H<sub>2</sub>O | 53643-12-2 | -20℃               | None            |
+| 4-MUB-phosphate                         | C~10~H~9~O~6~P                       | 3368-04-5  | -20℃               | None            |
+| 4-MUB-$\beta$-D-xylopyranoside          | C~15~H~16~O~7~                       | 6734-333-4 | -20℃               | None            |
+| L-leucine-7-amido-4-MUC-hydrochloride   | C~16~H~20~N~2~O~3~ · HCl             | 62480-44-8 | -20℃               | None            |
+| 4-methylumbelliferone (MUB)             | C~10~H~8~O~3~                        | 90-33-5    | 2-8℃               | None            |
+| 7-amino-4-methylcoumarin (MUC)          | C~10~H~9~NO~2~                       | 26093-31-2 | 2-8℃               | None            |
+| Sodium acetate                          | C<sub>2</sub>H~3~NaO<sub>2</sub>     | 127-09-3   | Room temperature   | None            |
+| Sodium hydroxide                        | NaOH                                 | 1310-73-2  | Room temperature   | Alkaline        |
+| Glacial acetic acid                     | C<sub>2</sub>H<sub>4</sub>O~2~       | 64-19-7    | Room temperature   | Acid, flammable |
+|                                         |                                      |            |                    |                 |

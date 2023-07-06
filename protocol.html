@@ -84,7 +84,7 @@ div.csl-indent {
     <div>
     <div class="quarto-title-meta-heading">Modified</div>
     <div class="quarto-title-meta-contents">
-      <p class="date-modified">June 15, 2023</p>
+      <p class="date-modified">June 20, 2023</p>
     </div>
   </div>
     
@@ -98,12 +98,12 @@ div.csl-indent {
 <h2 data-number="1" class="anchored" data-anchor-id="protocol-overview"><span class="header-section-number">1</span> Protocol overview</h2>
 <section id="before-starting-the-assay" class="level3" data-number="1.1">
 <h3 data-number="1.1" class="anchored" data-anchor-id="before-starting-the-assay"><span class="header-section-number">1.1</span> Before starting the assay</h3>
-<p>You need to prepare buffer solutions, substrate solutions and stop solutions before starting the assay, see <a href="#sec-solution_prep">Section&nbsp;2</a> for details and storage times. The preparation of all solutions is quite time consuming so allocate one day for it.</p>
-<p>You also need to prepare the soil suspensions <a href="#sec-soil_susp">Section&nbsp;2.5</a> in advance. Previous versions of this protocol has said that suspensions should be prepared on the day of the assay but the suspensions seem to be stable for at least a week, so they can be prepared in advance. It is, however, always a good idea to compare activities from a freshly made suspension with a stored one to optimize storage for your particular soil type.</p>
+<p>You need to prepare buffer solutions, substrate solutions and stop solutions before starting the assay, see <a href="#sec-solution-prep">Section&nbsp;2</a> for details and storage times. The preparation of all solutions is quite time consuming so allocate one day for it.</p>
+<p>You also need to prepare the soil suspensions <a href="#sec-soil-susp">Section&nbsp;2.5</a> in advance. Previous versions of this protocol has said that suspensions should be prepared on the day of the assay but the suspensions seem to be stable for at least a week, so they can be prepared in advance. It is, however, always a good idea to compare activities from a freshly made suspension with a stored one to optimize storage for your particular soil type.</p>
 </section>
 <section id="doing-the-assay" class="level3" data-number="1.2">
 <h3 data-number="1.2" class="anchored" data-anchor-id="doing-the-assay"><span class="header-section-number">1.2</span> Doing the assay</h3>
-<p>The assay is done in black 96-well flat-bottom microplates with four technical replicates of each soil suspension (24 samples/plate); see <a href="#fig-plate_setup">Figure&nbsp;1</a>. Prepare three identical plates with soil suspensions; one for doing the incubation, one fluorescence control <a href="#sec-fluorescence_ctrl">Section&nbsp;1.3</a> and one quenching control <a href="#sec-quenching_ctrl">Section&nbsp;1.4</a>.</p>
+<p>The assay is done in black 96-well flat-bottom microplates with four technical replicates of each soil suspension (24 samples/plate); see <a href="#fig-plate-setup">Figure&nbsp;1</a>. Prepare three identical plates with soil suspensions; one for doing the incubation, one fluorescence control <a href="#sec-fluorescence-ctrl">Section&nbsp;1.3</a> and one quenching control <a href="#sec-quenching-ctrl">Section&nbsp;1.4</a>.</p>
 <ol type="1">
 <li>Pipette 200 µl of the soil suspension into each well (4 replicates/sample)</li>
 <li>Pipette 50 µl of enzyme substrate into each well (use multi-channel pipette)</li>
@@ -129,8 +129,8 @@ div.csl-indent {
 <li>Add MUB standard substrate, same concentration as one point from the standard curve (e.g.&nbsp;9 µM) instead of the enzyme substrate in step 2. Then follow point 3-5.</li>
 </ul>
 </section>
-<section id="sec-fluorescence_ctrl" class="level3" data-number="1.3">
-<h3 data-number="1.3" class="anchored" data-anchor-id="sec-fluorescence_ctrl"><span class="header-section-number">1.3</span> Fluorescence control</h3>
+<section id="sec-fluorescence-ctrl" class="level3" data-number="1.3">
+<h3 data-number="1.3" class="anchored" data-anchor-id="sec-fluorescence-ctrl"><span class="header-section-number">1.3</span> Fluorescence control</h3>
 <p>The fluorescence control is used to control for any background fluorescence in the soil suspension, by stopping the reaction immediately after adding the enzyme substrate you can measure fluorescence at T<sub>0</sub>. This value is then subtracted from the fluorescence in the incubated sample to calculate “net”-fluorescence:</p>
 <p><span class="math display">\[
 fluorescence_{net} = incubated - T_0
@@ -138,8 +138,8 @@ fluorescence_{net} = incubated - T_0
 <p><strong>Note</strong>: In previous versions of the protocol, a heated (&gt;90℃) sub-sample has been used as a fluorescence control instead of using the T<sub>0</sub> approach outlined in this version. The reason for this is some observations of increased fluorescence after heating, relative to to the non-heated incubation, especially when working with soils with moderate to high mineral content.</p>
 <p>The T<sub>0</sub> approach could, however, be replaced by a heated control that is incubated for the same amount of time as the non-heated sample.</p>
 </section>
-<section id="sec-quenching_ctrl" class="level3" data-number="1.4">
-<h3 data-number="1.4" class="anchored" data-anchor-id="sec-quenching_ctrl"><span class="header-section-number">1.4</span> Quenching control</h3>
+<section id="sec-quenching-ctrl" class="level3" data-number="1.4">
+<h3 data-number="1.4" class="anchored" data-anchor-id="sec-quenching-ctrl"><span class="header-section-number">1.4</span> Quenching control</h3>
 <p>Quenching is a form of inhibition of fluorescence (e.g.&nbsp;caused by complex formation with the soil in the suspension). You need to test the level of quenching to determine whether your measurements are “ok”. You do this by incubating the soil suspensions with a standard solution of MUB or MUC (which are the fluorescent components in the enzyme substrates. A 30-60 min incubation period is usually enough. Calculate the quenching ratio:</p>
 <p><span class="math display">\[
 quenching = incubated/MUB_{standard}
@@ -152,18 +152,18 @@ fluorescence_{corrected} = fluorescence_{net} / quenching
 </section>
 <section id="standard-curve" class="level3" data-number="1.5">
 <h3 data-number="1.5" class="anchored" data-anchor-id="standard-curve"><span class="header-section-number">1.5</span> Standard curve</h3>
-<p>The standard solutions of MUB (for CBH, BG, NAG, CiBH, aP, and BXD) and MUC (for LAP) are used to make standard curves to be able to convert fluorescence to amounts of formed product (as a proxy for enzyme activity). You only have to do the standard curve once per “assay round”. See <a href="#fig-plate_standard">Figure&nbsp;2</a> for plate setup.</p>
+<p>The standard solutions of MUB (for CBH, BG, NAG, CiBH, aP, and BXD) and MUC (for LAP) are used to make standard curves to be able to convert fluorescence to amounts of formed product (as a proxy for enzyme activity). You only have to do the standard curve once per “assay round”. See <a href="#fig-plate-standard">Figure&nbsp;2</a> for plate setup.</p>
 </section>
 <section id="incubation-times" class="level3" data-number="1.6">
 <h3 data-number="1.6" class="anchored" data-anchor-id="incubation-times"><span class="header-section-number">1.6</span> Incubation times</h3>
 <p>Times for incubations have to be optimized for your particular soil type, and also varies between the different hydrolytic enzymes.</p>
 </section>
 </section>
-<section id="sec-solution_prep" class="level2" data-number="2">
-<h2 data-number="2" class="anchored" data-anchor-id="sec-solution_prep"><span class="header-section-number">2</span> Preparation of solutions</h2>
-<section id="sec-sodium_acetate" class="level3" data-number="2.1">
-<h3 data-number="2.1" class="anchored" data-anchor-id="sec-sodium_acetate"><span class="header-section-number">2.1</span> Sodium acetate buffer (50 mM)</h3>
-<p>Sodium acetate buffer is used to in the soil suspensions and to dissolve the fluorescent substrates <a href="#sec-fluo_subs">Section&nbsp;2.2</a>. Adjust the pH with glacial acetic acid to resemble the pH of the soil (pH ≈ 5 for forest O horizon). pH should be below 7.</p>
+<section id="sec-solution-prep" class="level2" data-number="2">
+<h2 data-number="2" class="anchored" data-anchor-id="sec-solution-prep"><span class="header-section-number">2</span> Preparation of solutions</h2>
+<section id="sec-sodium-acetate" class="level3" data-number="2.1">
+<h3 data-number="2.1" class="anchored" data-anchor-id="sec-sodium-acetate"><span class="header-section-number">2.1</span> Sodium acetate buffer (50 mM)</h3>
+<p>Sodium acetate buffer is used to in the soil suspensions and to dissolve the fluorescent substrates <strong>?@sec-fluo-subs</strong>. Adjust the pH with glacial acetic acid to resemble the pH of the soil (pH ≈ 5 for forest O horizon). pH should be below 7.</p>
 <p>To prepare 1 l of buffer:</p>
 <ul>
 <li><p>Dissolve 4.1015 g of sodium acetate in diH<sub>2</sub>O</p></li>
@@ -173,19 +173,19 @@ fluorescence_{corrected} = fluorescence_{net} / quenching
 </section>
 <section id="sec-fluo_subs" class="level3" data-number="2.2">
 <h3 data-number="2.2" class="anchored" data-anchor-id="sec-fluo_subs"><span class="header-section-number">2.2</span> Fluorescent substrates (200 µM)</h3>
-<p>Dissolve the substrates in 50 mM sodium acetate buffer <a href="#sec-sodium_acetate">Section&nbsp;2.1</a>. The substrates are difficult to dissolve so you may need to use a water bath at moderate heat and shake them from time to time, or use a sonicator. Calculate how much of each substrate solution you will need for all your samples and prepare solutions in bulk. You can prepare aliquots with enough volume for one or two plates (~ 5 ml/plate) and store them at -20℃ (for several months).</p>
+<p>Dissolve the substrates in 50 mM sodium acetate buffer <strong>?@sec-sodium_acetate</strong>. The substrates are difficult to dissolve so you may need to use a water bath at moderate heat and shake them from time to time, or use a sonicator. Calculate how much of each substrate solution you will need for all your samples and prepare solutions in bulk. You can prepare aliquots with enough volume for one or two plates (~ 5 ml/plate) and store them at -20℃ (for several months).</p>
 <p><em>Storage</em>: -20℃ (at least two months).</p>
 <p>Formula for calculating amounts of substrate needed:</p>
 <p><span class="math display">\[
 g_{substrate} = molarity \times volume \times molecular weight
 \]</span></p>
 <ul>
-<li><p>CBH (4-MUB-𝛽-D-cellobioside): <strong>1.000 mg/10 ml acetate buffer</strong></p></li>
-<li><p>BG (4-MUB-𝛽-D-glucopyranoside): <strong>0.676 mg/10 ml acetate buffer</strong></p></li>
-<li><p>NAG (4-MUB-N-acetyl-𝛽-D-glucosaminide): <strong>0.758 mg/10 ml acetate buffer</strong></p></li>
-<li><p>CiBH (4-MUB-𝛽-D-N-diacetyl-chitobioside): <strong>1.165 mg/10 ml acetate buffer</strong></p></li>
+<li><p>CBH (4-MUB-<span class="math inline">\(\beta\)</span>-D-cellobioside): <strong>1.000 mg/10 ml acetate buffer</strong></p></li>
+<li><p>BG (4-MUB-<span class="math inline">\(\beta\)</span>-D-glucopyranoside): <strong>0.676 mg/10 ml acetate buffer</strong></p></li>
+<li><p>NAG (4-MUB-N-acetyl-<span class="math inline">\(\beta\)</span>-D-glucosaminide): <strong>0.758 mg/10 ml acetate buffer</strong></p></li>
+<li><p>CiBH (4-MUB-<span class="math inline">\(\beta\)</span>-D-N-diacetyl-chitobioside): <strong>1.165 mg/10 ml acetate buffer</strong></p></li>
 <li><p>aP (4-MUB-phosphate): <strong>0.512 mg/10 ml acetate buffer</strong></p></li>
-<li><p>BXD (4-MUB-𝛽-D-xylopyranoside): <strong>0.616 mg/10 ml acetate buffer</strong></p></li>
+<li><p>BXD (4-MUB-<span class="math inline">\(\beta\)</span>-D-xylopyranoside): <strong>0.616 mg/10 ml acetate buffer</strong></p></li>
 <li><p>LAP (L-leucine-7-amido-4-MUC-hydrochloride): <strong>0.649 mg/10 ml acetate buffer</strong></p></li>
 </ul>
 </section>
@@ -217,8 +217,8 @@ g_{substrate} = molarity \times volume \times molecular weight
 <p>Dissolve 1 g NaOH in 50 ml sodium acetate buffer</p>
 <p><em>Storage</em>: +4℃</p>
 </section>
-<section id="sec-soil_susp" class="level3" data-number="2.5">
-<h3 data-number="2.5" class="anchored" data-anchor-id="sec-soil_susp"><span class="header-section-number">2.5</span> Soil suspension</h3>
+<section id="sec-soil-susp" class="level3" data-number="2.5">
+<h3 data-number="2.5" class="anchored" data-anchor-id="sec-soil-susp"><span class="header-section-number">2.5</span> Soil suspension</h3>
 <p>Soil suspensions are done by mixing soil with sodium acetate buffer into a homogeneous ‘soil-slurry’. In, the original protocol by <span class="citation" data-cites="saiya-cork2002">Saiya-Cork, Sinsabaugh, and Zak (<a href="#ref-saiya-cork2002" role="doc-biblioref">2002</a>)</span>, the assay is done within 48h of collection and fresh forest floor material is homogenized in the buffer with a mixer.</p>
 <p>The assay also works with freshly frozen or freeze-dried soils. Some caution should be taken when assaying air dried soil since there will be some biologic activity during drying at room temperature. Drying in heat (&gt;70℃) may cause denaturation of enzymes.</p>
 <p>Soil concentrations in the suspension needs to be optimized for each soil type, but a rule of thumb for organic forest soils is 0.001 gOM/ml. To get a representative sample, you can start out by doing a high concentration slurry and then dilute it to an appropriate final concentration. Alternatively, homogenize the soil in a large volume of sodium acetate buffer.</p>
@@ -236,10 +236,10 @@ g_{substrate} = molarity \times volume \times molecular weight
 <table class="table">
 <caption>Table&nbsp;1: Hydrolytic enzymes that can be targeted using the method outlined in this protocol.</caption>
 <colgroup>
-<col style="width: 12%">
-<col style="width: 5%">
-<col style="width: 66%">
-<col style="width: 15%">
+<col style="width: 24%">
+<col style="width: 24%">
+<col style="width: 26%">
+<col style="width: 24%">
 </colgroup>
 <thead>
 <tr class="header">
@@ -251,28 +251,28 @@ g_{substrate} = molarity \times volume \times molecular weight
 </thead>
 <tbody>
 <tr class="odd">
-<td>𝛽-D-Cellobiohydrolase</td>
+<td><span class="math inline">\(\beta\)</span>-D-Cellobiohydrolase</td>
 <td>CBH</td>
 <td>Releases cellobiose from cellulose</td>
-<td>4-MUB-𝛽-D-cellobioside</td>
+<td>4-MUB-<span class="math inline">\(\beta\)</span>-D-cellobioside</td>
 </tr>
 <tr class="even">
-<td>𝛽-Glucosidase</td>
+<td><span class="math inline">\(\beta\)</span>-Glucosidase</td>
 <td>BG</td>
 <td>Releases glucose from cellulose and cellobiose</td>
-<td>4-MUB-𝛽-D-glucopyranoside</td>
+<td>4-MUB-𝛽<span class="math inline">\(\beta\)</span>-D-glucopyranoside</td>
 </tr>
 <tr class="odd">
-<td>N-acetyl-𝛽-D-glucosaminidase</td>
+<td>N-acetyl-<span class="math inline">\(\beta\)</span>-D-glucosaminidase</td>
 <td>NAG</td>
 <td>Releases glucosamine from chitin and similar polymers. Indicator of organic N turnover (and microbial/fungal N recycling)</td>
-<td>4-MUB-N-acetyl-𝛽-D-glucosaminide</td>
+<td>4-MUB-N-acetyl-<span class="math inline">\(\beta\)</span>-D-glucosaminide</td>
 </tr>
 <tr class="even">
 <td>Chitobiohydrolase</td>
 <td>CiBH</td>
 <td>Cleaves disaccharides of glucosamine from the ends of chitin chains</td>
-<td>4-MUB-𝛽-D-N-diacetyl-chitobioside</td>
+<td>4-MUB-<span class="math inline">\(\beta\)</span>-D-N-diacetyl-chitobioside</td>
 </tr>
 <tr class="odd">
 <td>Acid phosphatase</td>
@@ -281,10 +281,10 @@ g_{substrate} = molarity \times volume \times molecular weight
 <td>4-MUB-phosphate</td>
 </tr>
 <tr class="even">
-<td>𝛽-Xylosidase</td>
+<td><span class="math inline">\(\beta\)</span>-Xylosidase</td>
 <td>BXD</td>
 <td>Degrades the xylose component of hemicellulose</td>
-<td>4-MUB-𝛽-D-xylopyranoside</td>
+<td>4-MUB-<span class="math inline">\(\beta\)</span>-D-xylopyranoside</td>
 </tr>
 <tr class="odd">
 <td>Leucine aminopeptidase</td>
@@ -298,13 +298,13 @@ g_{substrate} = molarity \times volume \times molecular weight
 </section>
 <section id="plate-setups" class="level2" data-number="4">
 <h2 data-number="4" class="anchored" data-anchor-id="plate-setups"><span class="header-section-number">4</span> Plate setups</h2>
-<div id="fig-plate_setup" class="quarto-figure quarto-figure-center anchored">
+<div id="fig-plate-setup" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="Figures/Plate_setup_hydro.JPG" class="img-fluid figure-img" width="391"></p>
 <p></p><figcaption class="figure-caption">Figure&nbsp;1: Plate setup for hydrolytic enzyme assay. The same setup is used for incubates, T0 control and quenching control plates</figcaption><p></p>
 </figure>
 </div>
-<div id="fig-plate_standard" class="quarto-figure quarto-figure-center anchored">
+<div id="fig-plate-standard" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="Figures/Plate_setup_standard.JPG" class="img-fluid figure-img" width="557"></p>
 <p></p><figcaption class="figure-caption">Figure&nbsp;2: Plate setup for standard curve</figcaption><p></p>
@@ -317,11 +317,11 @@ g_{substrate} = molarity \times volume \times molecular weight
 <p>Look up local rules/regulations for how to dispose of used and leftover chemicals.</p>
 <table class="table">
 <colgroup>
-<col style="width: 30%">
-<col style="width: 30%">
-<col style="width: 9%">
-<col style="width: 15%">
-<col style="width: 13%">
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
 </colgroup>
 <thead>
 <tr class="header">
@@ -334,28 +334,28 @@ g_{substrate} = molarity \times volume \times molecular weight
 </thead>
 <tbody>
 <tr class="odd">
-<td>4-MUB-𝛽-D-cellobioside</td>
+<td>4-MUB-<span class="math inline">\(\beta\)</span>-D-cellobioside</td>
 <td>C<sub>22</sub>H<sub>28</sub>O<sub>13</sub></td>
 <td>72626-61-0</td>
 <td>2-8℃</td>
 <td>None</td>
 </tr>
 <tr class="even">
-<td>4-MUB-𝛽-D-glucopyranoside</td>
+<td>4-MUB-<span class="math inline">\(\beta\)</span>-D-glucopyranoside</td>
 <td>C<sub>16</sub>H<sub>18</sub>O<sub>8</sub></td>
 <td>18997-57-4</td>
 <td>-20℃</td>
 <td>None</td>
 </tr>
 <tr class="odd">
-<td>4-MUB-N-acetyl-𝛽-D-glucosaminide</td>
+<td>4-MUB-N-acetyl-<span class="math inline">\(\beta\)</span>-D-glucosaminide</td>
 <td>C<sub>18</sub>H<sub>21</sub>NO<sub>8</sub></td>
 <td>37067-30-4</td>
 <td>-20℃</td>
 <td>None</td>
 </tr>
 <tr class="even">
-<td>4-MUB-𝛽-D-N-diacetyl-chitobioside</td>
+<td>4-MUB-<span class="math inline">\(\beta\)</span>-D-N-diacetyl-chitobioside</td>
 <td>C<sub>26</sub>H<sub>34</sub>N<sub>2</sub>O<sub>13</sub> · H<sub>2</sub>O</td>
 <td>53643-12-2</td>
 <td>-20℃</td>
@@ -369,7 +369,7 @@ g_{substrate} = molarity \times volume \times molecular weight
 <td>None</td>
 </tr>
 <tr class="even">
-<td>4-MUB-𝛽-D-xylopyranoside</td>
+<td>4-MUB-<span class="math inline">\(\beta\)</span>-D-xylopyranoside</td>
 <td>C<sub>15</sub>H<sub>16</sub>O<sub>7</sub></td>
 <td>6734-333-4</td>
 <td>-20℃</td>
