@@ -1,0 +1,88 @@
+---
+title: "Lab notebook, setup hydrolytic enzymes"
+author: "Karolina Jörgensen"
+format: html
+editor: visual
+---
+
+## 2023-09-05 Standard curves
+
+Prepared commercial acid phosphatase, MUB solution, NaOH and aP substrate. I used dH<sub>2</sub>O for the enzyme and sodium acetate buffer (pH = 5) that Erica had prepared the day before for the other reagents.
+
+Acid phosphatase, stock solution: 20 mg in 10 ml -\> 10 U/ml.\
+Made a standard curve (10-fold) with 1; 0.1; 0.01; 0.001: 0.0001, 0 U/ml
+
+MUB, stock solution: 8.8085 mg in 50 ml -\> 1 mM\
+Made a standard curve with 100; 90; 60; 30; 9; 3; 1;0 µM
+
+aP substrate 5.12 mg in 100 ml -\> 200 µM, frozen in aliquots of 5 or 10 ml (enough for 1 or 2 96 well plates)
+
+-   Prepared a plate with 4 technical replicates of:\
+    MUB standard + acetate buffer (high to low, A-H, 1-4). 50 µl MUB + 200 µl acetate buffer
+
+-   aP enzyme + MUB standard (high to low, A-F, 5-8). 200 µl aP + 50 µl MUB
+
+-   aP enzyme + aP substrate (high to low, A-F, 9-12). 200 µl aP + 50 µl aP substrate
+
+Plate was incubated in darkness for 15 minutes and stopped with 10 µl NaOH.
+
+```{r}
+#| echo: false
+
+library(tidyverse)
+library(readxl)
+library(ggpmisc)
+# Load raw data from standard curve test
+# Only read range with fluorescence data
+standard1 <- read_xlsx("Data/Raw/MUB_hydrolytic_enzymes_20230905_134336.xlsx", range ="A44:M52")
+
+# Read plate layout
+standard1.samples <- read_xlsx("Data/Raw/sample_template_20230905_134336.xlsx", range = "A1:M9")
+standard1.treats <- read_xlsx("Data/Raw/sample_template_20230905_134336.xlsx", range = "A12:M20")
+
+# Wrangle sample and treatment data with "well_ID" as identifyer
+standard1.samples <- standard1.samples |> 
+  pivot_longer(cols = 2:13, names_to = "column", values_to = "sample_conc") |> 
+  unite(well_ID, c(x, column), sep = "", remove = TRUE)
+
+standard1.treats <- standard1.treats |> 
+  pivot_longer(cols = 2:13, names_to = "column", values_to = "treatment") |> 
+  unite(well_ID, c(x, column), sep = "", remove = TRUE)
+
+standard1.samples <- full_join(standard1.samples, standard1.treats, by = "well_ID")
+
+# Wrangle fluorescence data into long format
+standard1 <- standard1 |> 
+  pivot_longer(cols = 2:13, names_to = "column", values_to = "fluorescence") |> 
+  unite(well_ID, c("<>", column), sep = "", remove = TRUE)
+
+# Generate cleaned dataset  
+standard1.clean <- full_join(standard1, standard1.samples, by = "well_ID") |> 
+  drop_na() 
+
+# Summarize data (averages of technical quadruplicates)
+standard1.sum <- standard1.clean |> 
+  group_by(treatment, sample_conc) |> 
+  summarise(mean = mean(fluorescence))
+
+# Remove highest aP concentration (range much above the MUB standard curve)
+
+standard1.sum <- standard1.sum |> 
+  filter(!(treatment == "aP_aPsub" & sample_conc == 1.0))
+
+# Plot standard curves
+standard.curve.1 <- ggplot(standard1.sum, aes(x = sample_conc, y = mean))+
+  geom_point() +
+  facet_grid(.~treatment, scales = "free")+
+  geom_smooth(method = "lm")+
+  stat_poly_eq(use_label(c("R2")))
+  
+```
+
+You can add options to executable code like this
+
+```{r}
+standard.curve.1
+```
+
+The `echo: false` option disables the printing of code (only output is displayed).
