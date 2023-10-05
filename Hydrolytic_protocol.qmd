@@ -129,6 +129,8 @@ $$
 
 Remember: one point of the standard curve (e.g. 9 µM) should be used for the quenching control, therefore you will need to prepare a larger volume of that concentration.
 
+Substrates are difficult to dissolve. It may be good to stir them while heating. \
+
 *Storage*: -20℃ for at least two months
 
 #### Standard curve {#sec-standard_curve}
@@ -174,7 +176,7 @@ Homogenization methods may differ depending on soil type and how the sample has 
 ## Enzymes and substrates
 
 | Enzyme                             | Abbreviation | Function                                                                                                                                                            | Substrate                               |
-|------------------------------------|--------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------|
+|------------|------------|--------------------------------------|------------|
 | $\beta$-D-Cellobiohydrolase        | CBH          | Releases cellobiose from cellulose                                                                                                                                  | 4-MUB-$\beta$-D-cellobioside            |
 | $\beta$-Glucosidase                | BG           | Releases glucose from cellulose and cellobiose                                                                                                                      | 4-MUB-$\beta$-D-glucopyranoside         |
 | N-acetyl-$\beta$-D-glucosaminidase | NAG          | Releases glucosamine from chitin and similar polymers. Indicator of organic N turnover (and microbial/fungal N recycling)                                           | 4-MUB-N-acetyl-$\beta$-D-glucosaminide  |
@@ -198,7 +200,7 @@ Although the chemicals used in the assay are, generally, not hazardous, regular 
 Look up local rules/regulations for how to dispose of used and leftover chemicals.
 
 | Chemical                                | Formula                              | CAS-number | Storage conditions | Hazards         |
-|-----------------------------------------|--------------------------------------|------------|--------------------|-----------------|
+|------------------|----------------|-------------|-------------|-------------|
 | 4-MUB-$\beta$-D-cellobioside            | C~22~H~28~O~13~                      | 72626-61-0 | 2-8℃               | None            |
 | 4-MUB-$\beta$-D-glucopyranoside         | C~16~H~18~O~8~                       | 18997-57-4 | -20℃               | None            |
 | 4-MUB-N-acetyl-$\beta$-D-glucosaminide  | C~18~H~21~NO~8~                      | 37067-30-4 | -20℃               | None            |
