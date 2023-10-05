@@ -79,10 +79,14 @@ standard.curve.1 <- ggplot(standard1.sum, aes(x = sample_conc, y = mean))+
   
 ```
 
-You can add options to executable code like this
-
 ```{r}
 standard.curve.1
 ```
 
-The `echo: false` option disables the printing of code (only output is displayed).
+## 2023-09-14 Planning soil trials
+
+The method worked on the new plate reader, and standard curves looked really good. Next step is to run tests with aP-spiked soil to make sure the assay works well in real soil slurries too. Should be quite easy to do!
+
+Step 1 is preparing soil slurries. I can use the old sodium acetate that Erica prepared for the trials. The same slurry can then be used to try out the MnP protocol. Use two of the soils that have been stored in the basement - also check if Dorte has some leftover agricultural soil I could use.
+
+Spike the soils with an appropriate amount of aP (maybe around 0.05 U/ml). Run tests on background activities in the soils + quenching control.
