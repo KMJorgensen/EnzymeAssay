@@ -90,3 +90,52 @@ The method worked on the new plate reader, and standard curves looked really goo
 Step 1 is preparing soil slurries. I can use the old sodium acetate that Erica prepared for the trials. The same slurry can then be used to try out the MnP protocol. Use two of the soils that have been stored in the basement - also check if Dorte has some leftover agricultural soil I could use.
 
 Spike the soils with an appropriate amount of aP (maybe around 0.05 U/ml). Run tests on background activities in the soils + quenching control.
+
+## 2023-10-05
+
+Preparation of standard curve for MUC. Although not as nice as the standard curve for MUB, it is still good to use.
+
+```{r}
+#| echo: false
+
+library(tidyverse)
+library(readxl)
+library(ggpmisc)
+# Load raw data from standard curve test
+# Only read range with fluorescence data
+standard_MUC <- read_xlsx("Data/Raw/MUB_hydrolytic_enzymes_20231005_151032.xlsx", range ="A44:M52")
+
+# Read plate layout
+standard_MUC.samples <- read_xlsx("Data/Raw/sample_template_20231005_151032.xlsx", range = "A1:M9")
+
+
+# Wrangle sample and treatment data with "well_ID" as identifyer
+standard_MUC.samples <- standard_MUC.samples |> 
+  pivot_longer(cols = 2:13, names_to = "column", values_to = "sample_conc") |> 
+  unite(well_ID, c(x, column), sep = "", remove = TRUE)
+
+
+# Wrangle fluorescence data into long format
+standard_MUC <- standard_MUC |> 
+  pivot_longer(cols = 2:13, names_to = "column", values_to = "fluorescence") |> 
+  unite(well_ID, c("<>", column), sep = "", remove = TRUE)
+
+# Generate cleaned dataset  
+standard_MUC.clean <- full_join(standard_MUC, standard_MUC.samples, by = "well_ID") |> 
+  drop_na() 
+
+# Summarize data (averages of technical quadruplicates)
+standard_MUC.sum <- standard_MUC.clean |> 
+  group_by(sample_conc) |> 
+  summarise(mean = mean(fluorescence))
+
+# Plot standard curves
+standard.curve.MUC <- ggplot(standard_MUC.sum, aes(x = sample_conc, y = mean))+
+  geom_point() +
+  geom_smooth(method = "lm")+
+  stat_poly_eq(use_label(c("R2")))
+```
+
+```{r}
+standard.curve.MUC
+```
