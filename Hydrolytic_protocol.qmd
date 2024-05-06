@@ -22,26 +22,60 @@ You also need to prepare the soil suspensions @sec-soil-susp in advance. Previou
 
 The assay is done in black 96-well flat-bottom microplates with four technical replicates of each soil suspension (24 samples/plate); see @fig-plate-setup. Prepare three identical plates with soil suspensions; one for doing the incubation, one fluorescence control @sec-fluorescence-ctrl and one quenching control @sec-quenching-ctrl.
 
+To ensure that results are comparable between plates, one of the 24 samples can be replaced by a positive control, *e.g.* a known concentration of MUB in acetate buffer. Fluorescence values should be comparable between plates.
+
 1.  Pipette 200 µl of the soil suspension into each well (4 replicates/sample)
 2.  Pipette 50 µl of enzyme substrate into each well (use multi-channel pipette)
-3.  Incubate plate in darkness (cover with aluminium foil)
+3.  Incubate plate in darkness (cover with lid or aluminium foil)
 4.  Stop the reaction by adding 10 µl of 0.5 M NaOH
-5.  Measure fluorescence using the following settings:
-    -   Excitation wavelength = 365 nm
-    -   Excitation slit = 2.5
-    -   Emission wavelength = 450 nm
-    -   Emission slit = 2.5
-    -   Emission filter = 390 nm cut off
-    -   Number of measurement cycles = 1
-    -   Read time for each well = 1 sec
 
-Alteration fluorescence control:
+Alteration for fluorescence control:
 
 -   Stop reaction immediately after step 2
 
-Alteration quenching control:
+Alteration for quenching control:
 
 -   Add MUB standard substrate, same concentration as one point from the standard curve (e.g. 9 µM) instead of the enzyme substrate in step 2. Then follow point 3-5.
+
+### Plate reader settings
+
+*TecanSpark plate reader (in MVM)*
+
+Measure fluorescence using the following settings:
+
+-   Mode: top
+
+-   Excitation wavelenght (nm): 365; Bandwidth: 20.0
+
+-   Emission wavelength (nm): 450; Bandwidth: 20.0
+
+-   Flashes: 30
+
+-   Mirror: Automatic
+
+-   Z position calculated from well: A1
+
+Determine the **gain** by measuring one plate with the setting "optimal" and recording the gain. The gain should be manually set to this value for all subsequent measurements in the project.
+
+*PerkinElmer plater reader (at MykoPat)*
+
+Measure fluorescence using the following settings:
+
+-   Excitation wavelength = 365 nm
+
+-   Excitation slit = 2.5
+
+-   Emission wavelength = 450 nm
+
+-   Emission slit = 2.5
+
+-   Emission filter = 390 nm cut off
+
+-   Number of measurement cycles = 1
+
+-   Read time for each well = 1 sec
+
+-   The plate needs to be manually aligned in the machine before each measurements.
 
 ### Fluorescence control {#sec-fluorescence-ctrl}
 
@@ -57,7 +91,7 @@ The T<sub>0</sub> approach could, however, be replaced by a heated control that 
 
 ### Quenching control {#sec-quenching-ctrl}
 
-Quenching is a form of inhibition of fluorescence (e.g. caused by complex formation with the soil in the suspension). You need to test the level of quenching to determine whether your measurements are "ok". You do this by incubating the soil suspensions with a standard solution of MUB or MUC (which are the fluorescent components in the enzyme substrates. A 30-60 min incubation period is usually enough. Calculate the quenching ratio:
+Quenching is a form of inhibition of fluorescence (e.g. caused by complex formation with the soil in the suspension). You need to test the level of quenching to determine whether your measurements are "ok". You do this by incubating the soil suspensions with a standard solution of MUB or MUC (which are the fluorescent components in the enzyme substrates). A 30-60 min incubation period is usually enough. Calculate the quenching ratio:
 
 $$
 quenching = incubated/MUB_{standard}
@@ -77,7 +111,7 @@ The standard solutions of MUB (for CBH, BG, NAG, CiBH, aP, and BXD) and MUC (for
 
 ### Incubation times
 
-Times for incubations have to be optimized for your particular soil type, and also varies between the different hydrolytic enzymes.
+Incubation times have to be optimized for your particular soil type, and also varies between the different hydrolytic enzymes. Usually, a 30-60 min incubation time is appropriate.
 
 ## Preparation of solutions {#sec-solution-prep}
 
@@ -129,7 +163,7 @@ $$
 
 Remember: one point of the standard curve (e.g. 9 µM) should be used for the quenching control, therefore you will need to prepare a larger volume of that concentration.
 
-Substrates are difficult to dissolve. It may be good to stir them while heating. \
+Substrates are difficult to dissolve. It may be good to stir them while heating.\
 
 *Storage*: -20℃ for at least two months
 
@@ -163,7 +197,7 @@ Soil suspensions are done by mixing soil with sodium acetate buffer into a homog
 
 The assay also works with freshly frozen or freeze-dried soils. Some caution should be taken when assaying air dried soil since there will be some biologic activity during drying at room temperature. Drying in heat (\>70℃) may cause denaturation of enzymes.
 
-Soil concentrations in the suspension needs to be optimized for each soil type, but a rule of thumb for organic forest soils is 0.001 gOM/ml. To get a representative sample, you can start out by doing a high concentration slurry and then dilute it to an appropriate final concentration. Alternatively, homogenize the soil in a large volume of sodium acetate buffer.
+Soil concentrations in the suspension needs to be optimized for each soil type, but a rule of thumb for organic forest soils is 0.001 gOM/ml, for agricultural soils 0.005 gFW/ml has worked well. To get a representative sample, you can start out by doing a high concentration slurry and then dilute it to an appropriate final concentration. Alternatively, homogenize the soil in a large volume of sodium acetate buffer.
 
 *Examples*:
 
@@ -176,7 +210,7 @@ Homogenization methods may differ depending on soil type and how the sample has 
 ## Enzymes and substrates
 
 | Enzyme                             | Abbreviation | Function                                                                                                                                                            | Substrate                               |
-|------------|------------|--------------------------------------|------------|
+|---------------|---------------|---------------------------|---------------|
 | $\beta$-D-Cellobiohydrolase        | CBH          | Releases cellobiose from cellulose                                                                                                                                  | 4-MUB-$\beta$-D-cellobioside            |
 | $\beta$-Glucosidase                | BG           | Releases glucose from cellulose and cellobiose                                                                                                                      | 4-MUB-$\beta$-D-glucopyranoside         |
 | N-acetyl-$\beta$-D-glucosaminidase | NAG          | Releases glucosamine from chitin and similar polymers. Indicator of organic N turnover (and microbial/fungal N recycling)                                           | 4-MUB-N-acetyl-$\beta$-D-glucosaminide  |
@@ -200,7 +234,7 @@ Although the chemicals used in the assay are, generally, not hazardous, regular 
 Look up local rules/regulations for how to dispose of used and leftover chemicals.
 
 | Chemical                                | Formula                              | CAS-number | Storage conditions | Hazards         |
-|------------------|----------------|-------------|-------------|-------------|
+|---------------|---------------|---------------|---------------|---------------|
 | 4-MUB-$\beta$-D-cellobioside            | C~22~H~28~O~13~                      | 72626-61-0 | 2-8℃               | None            |
 | 4-MUB-$\beta$-D-glucopyranoside         | C~16~H~18~O~8~                       | 18997-57-4 | -20℃               | None            |
 | 4-MUB-N-acetyl-$\beta$-D-glucosaminide  | C~18~H~21~NO~8~                      | 37067-30-4 | -20℃               | None            |
