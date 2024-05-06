@@ -10,7 +10,7 @@ label: tbl
 number-sections: true
 ---
 
-This protocol describes how to estimate activities of manganese peroxidase, a basidiomycete specific oxidative enzyme. The assay is a kninetic, absorbance based method that measures the formation of a dye produced by the reaction of two substrates (DMAB and MBTH) after oxidation. By using a standard curve based on a commercial manganese peroxidase, measured absorbances can be converted to concentrations of product formed.
+This protocol describes how to estimate activities of manganese peroxidase, a basidiomycete specific oxidative enzyme. The assay is a kinetic, absorbance based method that measures the formation of a dye produced by the reaction of two substrates (DMAB and MBTH) after oxidation. By using a standard curve based on a commercial manganese peroxidase, measured absorbances can be converted to concentrations of product formed.
 
 The ability to produce peroxidases is widespread across several organismal groups, but manganese peroxidases are only produced by some basidiomycete fungi. This assay specifically targets the manganese dependent peroxidases by incubating samples in the presence or absence of manganese. The difference in product formation in the assay with/without manganese can be assumed to represent manganese peroxidase activity.
 
@@ -53,7 +53,7 @@ Procedure:
 1.  Pipette 50 µl of clear supernatant into each well.
 2.  Pipette 140 µl of solutions A and B into the correct wells
 3.  To start the reaction, pipette 10 µl of H<sub>2</sub>O<sub>2</sub> into the correct wells.
-4.  Incubate the plate for 30-60 min in a plate reader and read absorbance at 590 nm every three minutes.
+4.  Incubate the plate for 30-60 min in a plate reader and read absorbance at 590 nm every thirty seconds.
 
 ## Prepare solutions
 
@@ -100,7 +100,7 @@ $$
 
     *Storage*: 4°C, several months
 
--   **H**<sub>2</sub>**O**<sub>2</sub>**, 5mM:** From 33% stock solution, 25.5 µl/50 ml sodium acetate buffer
+-   **H**<sub>2</sub>**O**<sub>2</sub>**, 5mM:** From 33% stock solution, 25.5 µl/50 ml sodium acetate buffer. *Ideally, the H*<sub>*2*</sub>*O*<sub>*2*</sub> *concentration should be optimized to the samples being used, as a lower or higher concentration may improve the rate of activity.*
 
     *Storage*: Should be prepared daily
 
@@ -129,7 +129,7 @@ Since some of the chemicals pose a danger to human health, it is advisable to wo
 Collect used chemicals in a container and dispose of it according to rules in the lab. Don't pour chemicals down the drain.
 
 | Chemical                                                                   | Formula                                                                                | CAS-number  | Storage conditions                           | Hazards                                                                                                   |
-|----------------------------------------------------------------------------|----------------------------------------------------------------------------------------|-------------|----------------------------------------------|-----------------------------------------------------------------------------------------------------------|
+|-------------|---------------|-------------|-------------|------------------|
 | Sodium acetate                                                             | C<sub>2</sub>H~3~NaO<sub>2</sub>                                                       | 127-09-3    | Room temperature                             | None                                                                                                      |
 | Glacial acetic acid                                                        | C<sub>2</sub>H<sub>4</sub>O~2~                                                         | 64-19-7     | Room temperature                             | Acid, flammable                                                                                           |
 | Sodium lactate                                                             | C<sub>3</sub>H<sub>5</sub>NaO<sub>3</sub>                                              | 867-56-1    | 2-8°C, dry                                   | None                                                                                                      |
