@@ -114,9 +114,11 @@ Soil concentrations in the suspension needs to be optimized for each soil type, 
 
 ## Plate setup
 
-![Suggested plate setup for manganese peroxidase assay](Figures/Plate_setup_MnP.JPG)
+![Suggested plate setup for manganese peroxidase assay with inhibition control](Figures/MnP_platesetup_inhibition_control.PNG)
 
-![Suggested plate setup for control plate for manganese peroxidase assay. This setup should be run when new commercial manganese peroxidase has been prepared, to be used as a reference for the inhibition control. It could be fitted on the same plate as soil samples if there is space left.](Figures/Plate_setup_MnP_ctrl.JPG)
+![Suggested plate setup for manganese peroxidase assay without an inhibition control](Figures/MnP_platesetup_no_inhibition_control.PNG)
+
+![Suggested plate setup for control plate for manganese peroxidase assay. This setup should be run when new commercial manganese peroxidase has been prepared, to be used as a reference for the inhibition control. It could be fitted on the same plate as soil samples if there is space left.](Figures/MnP_platesetup_MnP_reference.PNG)
 
 ## Chemical information, risk assessment
 
@@ -129,7 +131,7 @@ Since some of the chemicals pose a danger to human health, it is advisable to wo
 Collect used chemicals in a container and dispose of it according to rules in the lab. Don't pour chemicals down the drain.
 
 | Chemical                                                                   | Formula                                                                                | CAS-number  | Storage conditions                           | Hazards                                                                                                   |
-|-------------|---------------|-------------|-------------|------------------|
+|---------------|---------------|---------------|---------------|---------------|
 | Sodium acetate                                                             | C<sub>2</sub>H~3~NaO<sub>2</sub>                                                       | 127-09-3    | Room temperature                             | None                                                                                                      |
 | Glacial acetic acid                                                        | C<sub>2</sub>H<sub>4</sub>O~2~                                                         | 64-19-7     | Room temperature                             | Acid, flammable                                                                                           |
 | Sodium lactate                                                             | C<sub>3</sub>H<sub>5</sub>NaO<sub>3</sub>                                              | 867-56-1    | 2-8°C, dry                                   | None                                                                                                      |
