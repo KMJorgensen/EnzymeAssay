@@ -1,7 +1,7 @@
 ---
 title: "Manganese peroxidase assay for soil and litter"
 author: "Karolina Jörgensen"
-format: html
+format: pdf
 editor: visual
 date-modified: today
 bibliography: references.bib
@@ -77,10 +77,10 @@ $$
 g_{substrate} = molarity \times volume \times molecular weight
 $$
 
--   **Sodium lactate buffer, 100 mM:** 1.1206 g/100 ml sodium acetate buffer\
+-   **Sodium lactate buffer, 100 mM:** 1.1206 g/100 ml dH<sub>2</sub>O\
     Adjust pH to 4.5 with glacial acetic acid.
 
--   **Sodium succinate buffer, 100 mM:** 1.6205/100 ml sodium acetate buffer\
+-   **Sodium succinate buffer, 100 mM:** 1.6205/100 ml dH<sub>2</sub>O\
     Adjust pH to 4.5 with glacial acetic acid.
 
 -   **DMAB, 50 mM** (3-dimethylaminobenzoic acid): 41.297 mg/5 ml acetate buffer\
